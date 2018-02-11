@@ -339,10 +339,25 @@ summary {
 	border-width: 0 0 1px;
 }
 
+.block {
+	padding: 14px;
+	margin: 3px 0;
+	color: #eee;
+	background-color: #2a2a2a;
+	border-color: #333;
+	border-style: solid;
+	border-width: 1px 0;
+}
+
 @media screen and (min-width: 480px) {
 	.header {
 		margin: 0 5px 5px;
 		border-width: 0 1px 1px;
+	}
+
+	.block {
+		margin: 5px;
+		border-width: 1px;
 	}
 }
 
