@@ -109,6 +109,16 @@ dd {
 	margin-left: 0;
 }
 
+blockquote {
+	padding-left: 15px;
+	margin: 0 0 1rem;
+	border-left: 5px solid #f8ae00;
+}
+
+blockquote footer {
+	text-align: right;
+}
+
 dfn {
 	font-style: italic;
 }
@@ -165,6 +175,12 @@ pre {
 	overflow: auto;
 	-ms-overflow-style: scrollbar;
 	background-color: #151515;
+}
+
+kbd {
+	padding: 2px 3px;
+	color: #000;
+	background: #999;
 }
 
 figure {
