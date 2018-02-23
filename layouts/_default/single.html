@@ -4,6 +4,7 @@
 			<article class="post">
 				<h1 class="post__title">{{ .Title }}</h1>
 				<div class="post__content">{{ .Content }}</div>
+				{{ if .Params.tags }}{{ partial "post_tags.html" . }}{{ end }}
 			</article>
 		</div>
 	</div>

@@ -374,6 +374,18 @@ summary {
 	text-decoration: none;
 }
 
+.post__tags {
+	margin-top: 2rem;
+}
+
+.post__tag {
+	display: inline-block;
+	padding: 0 6px 3px;
+	margin: 0 5px 5px 0;
+	line-height: 1.5;
+	background: #151515;
+}
+
 /* Pagination */
 .pagination {
 	margin-bottom: 10px;
