@@ -374,6 +374,26 @@ summary {
 	text-decoration: none;
 }
 
+/* Pagination */
+.pagination {
+	margin-bottom: 10px;
+	text-align: center;
+	background-color: #2a2a2a;
+}
+
+.pagination__item {
+	display: inline-block;
+	padding: 4px 10px;
+	font-weight: 700;
+	border: 1px solid;
+}
+
+.pagination__item--gap {
+	color: #888;
+	cursor: default;
+	border-color: #888;
+}
+
 /* Footer */
 .footer {
 	padding: 10px 0;
