@@ -8,6 +8,7 @@
 	{{ if .Site.Params.opengraph }}{{ template "_internal/opengraph.html" . }}{{ end }}
 	{{ if .Site.Params.twitter_cards }}{{ template "_internal/twitter_cards.html" . }}{{ end }}
 	<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+	{{ template "_internal/google_analytics_async.html" . }}
 </head>
 <body>
 	<header class="header">
