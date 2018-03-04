@@ -346,6 +346,26 @@ mark {
 	background-color: #f8ae00;
 }
 
+.mt {
+	margin-top: 1rem;
+}
+
+.mb {
+	margin-bottom: 1rem;
+}
+
+.mla {
+	margin-left: auto;
+}
+
+.tal {
+	text-align: left;
+}
+
+.tar {
+	text-align: right;
+}
+
 /* Header */
 .header {
 	margin: 0 0 5px;
@@ -389,6 +409,17 @@ mark {
 .logo:hover {
 	color: #f8ae00;
 	text-decoration: none;
+}
+
+/* Post */
+.post__meta {
+	font-size: 14px;
+	color: #888;
+}
+
+.post__meta-published,
+.post__meta-lastmod {
+	display: block;
 }
 
 .post__tags {
