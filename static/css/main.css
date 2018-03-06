@@ -411,6 +411,15 @@ mark {
 	text-decoration: none;
 }
 
+/* Taxonomies */
+.page__title {
+	margin-bottom: 0;
+}
+
+.page__content {
+	margin-top: 1rem;
+}
+
 /* Post */
 .post__meta {
 	font-size: 14px;
