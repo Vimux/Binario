@@ -467,6 +467,16 @@ mark {
 }
 
 /* Post */
+.post__content {
+	flex: 1 0 auto;
+	margin: 0;
+	color: #c3c3c3;
+}
+
+.post__content p:last-child {
+	margin-bottom: 0;
+}
+
 .post__meta {
 	font-size: 14px;
 	color: #888;
