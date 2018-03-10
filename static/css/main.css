@@ -411,6 +411,20 @@ mark {
 	text-decoration: none;
 }
 
+/* Taxonomies */
+.page__title {
+	margin-bottom: 0;
+}
+
+.page__content {
+	margin-top: 1rem;
+}
+
+/* Single */
+.single {
+	margin-top: 10px;
+}
+
 /* Cards UI*/
 .cards {
 	display: flex;
@@ -450,15 +464,6 @@ mark {
 	flex-direction: column;
 	width: 100%;
 	margin: 0;
-}
-
-/* Taxonomies */
-.page__title {
-	margin-bottom: 0;
-}
-
-.page__content {
-	margin-top: 1rem;
 }
 
 /* Post */
