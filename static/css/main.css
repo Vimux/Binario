@@ -411,6 +411,47 @@ mark {
 	text-decoration: none;
 }
 
+/* Cards UI*/
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card {
+	display: flex;
+	width: 100%;
+	padding: 3px 0;
+}
+
+@media screen and (min-width: 480px) {
+	.card {
+		padding: 5px;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.card--2col {
+		width: 50%;
+	}
+
+	.card--3col {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 860px) {
+	.card--3col {
+		width: 33.333%;
+	}
+}
+
+.card__box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+}
+
 /* Taxonomies */
 .page__title {
 	margin-bottom: 0;
