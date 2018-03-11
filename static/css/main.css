@@ -467,6 +467,10 @@ mark {
 }
 
 /* Post */
+.post__title-link {
+	font-size: 20px;
+}
+
 .post__content {
 	flex: 1 0 auto;
 	margin: 0;
