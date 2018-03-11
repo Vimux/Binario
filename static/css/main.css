@@ -503,6 +503,12 @@ mark {
 	background: #151515;
 }
 
+/* Comments */
+.comments {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 /* Pagination */
 .pagination {
 	margin-bottom: 10px;
