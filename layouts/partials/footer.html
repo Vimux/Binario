@@ -1,5 +1,5 @@
 <footer class="footer">
-	<div class="footer__copyright">© {{ now.Format "2006" }} {{ .Site.Title }}.</div>
+	<div class="footer__copyright">© {{ now.Format "2006" }} {{ .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
 </footer>
 </body>
 </html>

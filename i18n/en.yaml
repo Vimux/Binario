@@ -4,3 +4,8 @@
 
 - id: meta_categories
   translation: Categories
+
+# Footer
+# TODO: Add link to Binario theme repo
+- id: footer_credits
+  translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
