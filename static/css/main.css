@@ -411,6 +411,129 @@ mark {
 	text-decoration: none;
 }
 
+/* Menu */
+.main-menu {
+	display: block;
+	font-size: 0;
+	font-weight: 700;
+}
+
+.main-nav__btn {
+	float: right;
+	width: 42px;
+	height: 42px;
+	padding: 0;
+	font-size: 1em;
+	color: #000;
+	background-color: #f8ae00;
+	border: 0;
+}
+
+.main-nav__btn:focus,
+.main-nav__btn:hover {
+	color: #000;
+}
+
+.main-nav__btn .icon-menu__burger {
+	display: inline;
+}
+
+.main-nav__btn .icon-menu__x {
+	display: none;
+}
+
+.main-nav__btn--active .icon-menu__burger {
+	display: none;
+}
+
+.main-nav__btn--active .icon-menu__x {
+	display: inline;
+}
+
+.main-nav__list {
+	font-size: 0;
+}
+
+.main-nav__item {
+	font-size: 1rem;
+	font-weight: 700;
+	border-top: 1px solid #333;
+}
+
+.main-nav__item:hover {
+	background-color: #444;
+}
+
+.main-nav__item--active {
+	padding: 10px;
+}
+
+.main-nav__item--active:hover {
+	background-color: transparent;
+}
+
+.main-nav__link {
+	display: block;
+	padding: 10px;
+}
+
+.main-nav__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.classlist .main-nav__list {
+	display: none;
+}
+
+.classlist .main-nav__btn {
+	display: block;
+}
+
+.main-nav__list.main-nav__list--active {
+	display: block;
+	width: 100%;
+	clear: both;
+	background-color: #2a2a2a;
+}
+
+@media (min-width: 720px) {
+	.logo {
+		display: inline-block;
+	}
+
+	.logo:hover {
+		background-color: #444;
+	}
+
+	.classlist .main-nav__list {
+		display: block;
+	}
+
+	.classlist .main-nav__btn {
+		display: none;
+	}
+
+	.main-nav__btn {
+		display: none;
+	}
+
+	.main-nav {
+		display: inline-block;
+	}
+
+	.main-nav__item {
+		display: inline-block;
+		border: 0;
+	}
+
+	.main-nav__list.main-nav__list--active {
+		position: initial;
+		border: 0;
+	}
+}
+
 /* Taxonomies */
 .page__title {
 	margin-bottom: 0;

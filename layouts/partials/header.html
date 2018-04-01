@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html class="h" lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,4 +19,5 @@
 <body>
 	<header class="header">
 		<a class="logo" href="/">Binario</a>
+		{{ partial "menu.html" . }}
 	</header>
