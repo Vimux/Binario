@@ -18,6 +18,6 @@
 </head>
 <body>
 	<header class="header">
-		<a class="logo" href="/">Binario</a>
+		<a class="logo" href="{{ "" | relURL }}">{{ .Site.Title }}</a>
 		{{ partial "menu.html" . }}
 	</header>
