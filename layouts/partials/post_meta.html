@@ -1,8 +1,8 @@
 {{- if not .Date.IsZero }}
-<time class="post__meta-published meta-published" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format ( .Site.Params.dateformat | default "January 02, 2006" )}}</time>
+<time class="post__meta-published meta-published" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format ( .Site.Params.dateFormat | default "January 02, 2006" )}}</time>
 {{ end }}
 {{- if ne .Date .Lastmod }}
-<time class="post__meta-lastmod meta-lastmod" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">{{ T "meta_lastmod" }}: {{ .Lastmod.Format ( .Site.Params.dateformat | default "January 02, 2006" )}}</time>
+<time class="post__meta-lastmod meta-lastmod" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05" }}">{{ T "meta_lastmod" }}: {{ .Lastmod.Format ( .Site.Params.dateFormat | default "January 02, 2006" )}}</time>
 {{- end }}
 {{- if .Params.categories }}
 <span class="post__meta-categories meta-categories">
