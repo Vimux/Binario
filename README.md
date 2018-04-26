@@ -2,6 +2,8 @@
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
+![Binario theme screenshot](https://github.com/vimux/binario/blob/master/images/tn.png)
+
 **Features:**
 
 * Responsive
@@ -12,7 +14,7 @@
 
 Have a bug? [Please open a new issue](https://github.com/vimux/binario/issues/new).
 
-Pull requests are very welcome too, but please make sure they match the existing contributing guide.
+Pull requests are very welcome too, but please make sure they match the existing [contributing guide](https://github.com/vimux/binario/wiki/contributing).
 
 ## License
 
