@@ -1,4 +1,4 @@
-# Binario
+# Binario [WIP]
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
@@ -9,6 +9,28 @@
 * Responsive
 * Card-based list layout
 * Internal Hugo templates for Open Graph and Twitter Cards meta data, google analytics, and Disqus comments
+
+## Configuration
+
+### Config.toml example
+
+```toml
+baseurl = "/"
+title = "Your Site Title"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+theme = "binario"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[Params]
+author = "John Doe" # Used in meta author. Optional
+description = "John Doe's Personal blog about everything" # Description of your site. Used in meta description
+opengraph = true # Enable OpenGraph if true
+twitter_cards = true # Enable Twitter Cards if true
+cardsPerRow = 2 # Possible values: 1, 2, 3
+#dateFormat = "2006-01-02" # change the format of dates
+```
 
 ## Contributing
 
