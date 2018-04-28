@@ -30,6 +30,16 @@ opengraph = true # Enable OpenGraph if true
 twitter_cards = true # Enable Twitter Cards if true
 cardsPerRow = 2 # Possible values: 1, 2, 3
 #dateFormat = "2006-01-02" # change the format of dates
+
+[outputFormats]
+  [outputFormats.MANIFEST]
+    mediaType = "application/json"
+    baseName = "manifest"
+    isPlainText = true
+    notAlternative = true
+
+[outputs]
+  home = ["HTML", "MANIFEST"]
 ```
 
 ## Contributing
