@@ -1,4 +1,5 @@
 <article class="post card__box block">
+	{{- partial "post_thumbnail.html" (dict "page" . ) }}
 	<h1 class="post__title"><a class="post__title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
 	<div class="post__content">{{- .Summary }}</div>
 	<div class="post__meta meta mt tar">{{ partial "post_meta.html" . }}</div>

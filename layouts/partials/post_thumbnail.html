@@ -1,0 +1,6 @@
+{{- $img := ( .page.Resources.ByType "image").GetMatch "thumbnail.*" }}
+{{- with $img }}
+	<figure class="post__thumbnail thumbnail">
+		<img class="thumbnail__img" src="{{ $img.RelPermalink }}" alt="{{ $img.Title }}">
+	</figure>
+{{- end }}
