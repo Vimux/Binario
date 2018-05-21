@@ -174,7 +174,21 @@ pre {
 	margin-bottom: 1rem;
 	overflow: auto;
 	-ms-overflow-style: scrollbar;
-	background-color: #151515;
+	background-color: #111;
+}
+
+code {
+	padding: 1px 3px;
+	color: #e44;
+	background-color: #111;
+	border-radius: 2px;
+}
+
+pre code {
+	padding: 0;
+	color: inherit;
+	background-color: inherit;
+	border-radius: 0;
 }
 
 kbd {
