@@ -213,7 +213,7 @@ svg:not(:root) {
 
 table {
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 1rem;
 	border-spacing: 0;
 	border-collapse: collapse;
 	border-top: 1px solid #ddd;
@@ -222,7 +222,7 @@ table {
 
 td,
 th {
-	padding: 5px 10px;
+	padding: .3125rem .625rem;
 	border-right: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
@@ -382,7 +382,7 @@ mark {
 
 /* Header */
 .header {
-	margin: 0 0 5px;
+	margin: 0 0 .3125rem;
 	overflow: auto;
 	background-color: #2a2a2a;
 	border-color: #333;
@@ -391,8 +391,8 @@ mark {
 }
 
 .block {
-	padding: 14px;
-	margin: 3px 0;
+	padding: .875rem;
+	margin: .1875rem 0;
 	color: #eee;
 	background-color: #2a2a2a;
 	border-color: #333;
@@ -402,12 +402,12 @@ mark {
 
 @media screen and (min-width: 480px) {
 	.header {
-		margin: 0 5px 5px;
+		margin: 0 .3125rem .3125rem;
 		border-width: 0 1px 1px;
 	}
 
 	.block {
-		margin: 5px;
+		margin: .3125rem;
 		border-width: 1px;
 	}
 }
@@ -415,7 +415,7 @@ mark {
 .logo {
 	display: inline-block;
 	float: left;
-	padding: 10px 12px;
+	padding: 0.625rem .75rem;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -479,7 +479,7 @@ mark {
 }
 
 .main-nav__item--active {
-	padding: 10px;
+	padding: .625rem;
 }
 
 .main-nav__item--active:hover {
@@ -488,7 +488,7 @@ mark {
 
 .main-nav__link {
 	display: block;
-	padding: 10px;
+	padding: .625rem;
 }
 
 .main-nav__list {
@@ -559,7 +559,7 @@ mark {
 
 /* Single */
 .single {
-	margin-top: 10px;
+	margin-top: .625rem;
 }
 
 /* Cards UI*/
@@ -571,12 +571,12 @@ mark {
 .card {
 	display: flex;
 	width: 100%;
-	padding: 3px 0;
+	padding: .1875rem 0;
 }
 
 @media screen and (min-width: 480px) {
 	.card {
-		padding: 5px;
+		padding: .3125rem;
 	}
 }
 
@@ -605,7 +605,7 @@ mark {
 
 /* Post */
 .post__title-link {
-	font-size: 20px;
+	font-size: 1.25rem;
 }
 
 .post__content {
@@ -619,7 +619,7 @@ mark {
 }
 
 .post__meta {
-	font-size: 14px;
+	font-size: .875rem;
 	color: #888;
 }
 
@@ -634,28 +634,28 @@ mark {
 
 .post__tag {
 	display: inline-block;
-	padding: 0 6px 3px;
-	margin: 0 5px 5px 0;
+	padding: 0 .375rem .1875rem;
+	margin: 0 .3125rem .3125rem 0;
 	line-height: 1.5;
 	background: #151515;
 }
 
 /* Comments */
 .comments {
-	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-top: .625rem;
+	margin-bottom: .625rem;
 }
 
 /* Pagination */
 .pagination {
-	margin-bottom: 10px;
+	margin-bottom: .625rem;
 	text-align: center;
 	background-color: #2a2a2a;
 }
 
 .pagination__item {
 	display: inline-block;
-	padding: 4px 10px;
+	padding: .25rem .625rem;
 	font-weight: 700;
 	border: 1px solid;
 }
@@ -668,9 +668,9 @@ mark {
 
 /* Footer */
 .footer {
-	padding: 10px 0;
-	margin: 5px 0 0;
-	font-size: 13px;
+	padding: .625rem 0;
+	margin: .3125rem 0 0;
+	font-size: .8125rem;
 	color: #888;
 	border-top: 2px solid #333;
 }
@@ -681,6 +681,6 @@ mark {
 
 @media screen and (min-width: 480px) {
 	.footer {
-		margin: 5px 5px 0;
+		margin: .3125rem .3125rem 0;
 	}
 }
