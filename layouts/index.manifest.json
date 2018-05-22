@@ -1,9 +1,13 @@
 {
-  "name": "{{ .Site.Title }}",
-  "short_name": "{{ .Site.Title }}",
-  "display": "browser",
-  "background_color": "#2a2a2a",
-  "theme_color": "#1b1b1b",
+  "name": "{{ if .Site.Params.Manifest.name }}{{ .Site.Params.Manifest.name }}{{ else }}{{ .Site.Title }}{{ end }}",
+  "short_name": "{{ if .Site.Params.Manifest.shortName }}{{ .Site.Params.Manifest.shortName }}{{ else }}{{ .Site.Title }}{{ end }}",
+  "display": "{{ .Site.Params.Manifest.display | default "browser" }}",
+  "background_color": "{{ .Site.Params.Manifest.backgroundColor | default "#2a2a2a" }}",
+  "theme_color": "{{ .Site.Params.Manifest.themeColor | default "#1b1b1b" }}",
+  {{- with .Site.Params.Manifest.description }}"description": "{{ . }}",{{ end }}
+  {{- with .Site.Params.Manifest.orientation }}"orientation": "{{ . }}",{{ end }}
+  {{- with .Site.Params.Manifest.startUrl }}"start_url": "{{ . }}",{{ end }}
+  {{- with .Site.Params.Manifest.scope }}"scope": "{{ . }}",{{ end }}
   "icons": [
     {
       "src": "icons/192.png",
