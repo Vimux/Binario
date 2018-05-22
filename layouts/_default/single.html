@@ -5,6 +5,12 @@
 				{{- partial "post_thumbnail.html" (dict "page" . ) }}
 				<div class="post__meta meta mb">{{ partial "post_meta.html" . }}</div>
 				<h1 class="post__title">{{ .Title }}</h1>
+				{{ if eq .Params.toc true }}
+					<details class="post__toc toc" {{ if .Params.tocOpen }}open{{ end }}>
+						<summary class="toc__title">{{- T "post_toc" -}}</summary>
+						{{ .TableOfContents }}
+					</details>
+				{{ end }}
 				<div class="post__content">{{ .Content }}</div>
 				<footer class="post__footer">
 					{{ if .Params.tags }}{{ partial "post_tags.html" . }}{{ end }}

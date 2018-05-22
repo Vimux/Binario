@@ -19,6 +19,7 @@ html {
 
 article,
 aside,
+details,
 dialog,
 figcaption,
 figure,
@@ -27,7 +28,8 @@ header,
 hgroup,
 main,
 nav,
-section {
+section,
+summary {
 	display: block;
 }
 
@@ -663,6 +665,34 @@ mark {
 	margin: 0 .3125rem .3125rem 0;
 	line-height: 1.5;
 	background: #151515;
+}
+
+.post__toc {
+	background: #111;
+	padding: .5rem;
+	margin-bottom: 1rem;
+	color: #f8ae00;
+	list-style: none;
+}
+
+.post__toc[open] {
+	color: #fff;
+}
+
+.post__toc ul {
+	list-style: none;
+	padding-left: 0;
+	padding-top: 1rem;
+}
+
+.post__toc ul ul {
+	padding-left: 2rem;
+	padding-top: 0;
+}
+
+.toc__title {
+	padding: .25rem;
+	font-weight: 700;
 }
 
 /* Comments */

@@ -1,4 +1,7 @@
 # Post
+- id: post_toc
+  translation: Table of Contents
+
 - id: meta_lastmod
   translation: Updated
 
