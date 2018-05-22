@@ -668,11 +668,11 @@ mark {
 }
 
 .post__toc {
-	background: #111;
 	padding: .5rem;
 	margin-bottom: 1rem;
 	color: #f8ae00;
 	list-style: none;
+	background: #111;
 }
 
 .post__toc[open] {
@@ -680,14 +680,14 @@ mark {
 }
 
 .post__toc ul {
-	list-style: none;
-	padding-left: 0;
 	padding-top: 1rem;
+	padding-left: 0;
+	list-style: none;
 }
 
 .post__toc ul ul {
-	padding-left: 2rem;
 	padding-top: 0;
+	padding-left: 2rem;
 }
 
 .toc__title {
