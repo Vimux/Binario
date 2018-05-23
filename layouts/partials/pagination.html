@@ -1,7 +1,6 @@
 {{- $pag := $.Paginator }}
 {{- if gt $pag.TotalPages 1 }}
 <div class="pagination block">
-	{{- if not $pag.HasPrev }}{{ else}}<a class="pagination__item pagination__item-link" href="{{ if $pag.HasPrev }}{{ $pag.Prev.URL }}{{ end }}">❰</a>{{- end }}
 	{{- $.Scratch.Set "__paginator.ellipsed" false }}
 	{{- range $pag.Pagers }}
 	{{- $right := sub .TotalPages .PageNumber }}
@@ -20,6 +19,5 @@
 		<span class="pagination__item pagination__item--gap">&hellip;</span>
 	{{- end }}
 	{{- end }}
-	{{- if not $pag.HasNext }}{{ else }}<a class="pagination__item" href="{{ if $pag.HasNext }}{{ $pag.Next.URL }}{{ end }}">❱</a>{{ end }}
 </div>
 {{- end }}
