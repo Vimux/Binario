@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+	<div class="main">
+		<div class="cards">
+		{{ $mainSections := .Site.Params.mainSections | default (slice "post") }}
+		{{ $paginator := .Paginate ( where .Data.Pages "Section" "in" $mainSections ) }}
+		{{ range $paginator.Pages }}
+			<div class="card{{ with .Site.Params.cardsPerRow }} card--{{ . }}col{{ else }} card--2col{{ end }}">
+			{{ .Render "summary" }}
+			</div>
+		{{ end }}
+		</div>
+		{{ partial "pagination.html" . }}
+	</div>
+{{ partial "footer.html" . }}
