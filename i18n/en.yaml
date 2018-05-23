@@ -11,3 +11,13 @@
 # Footer
 - id: footer_credits
   translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
+
+# 404
+- id: page404_title
+  translation: "404 Page not found"
+
+- id: page404_lead
+  translation: "Sorry, the page you were looking for doesn't exist."
+
+- id: page404_link
+  translation: "Go back to main page"
