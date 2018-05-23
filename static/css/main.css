@@ -465,9 +465,10 @@ mark {
 	height: 42px;
 	padding: 0;
 	font-size: 1em;
-	color: #000;
-	background-color: #f8ae00;
+	fill: #f8ae00;
+	background-color: #2a2a2a;
 	border: 0;
+	border-left: 1px solid #333;
 }
 
 .main-nav__btn:focus,
