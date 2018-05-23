@@ -695,6 +695,10 @@ mark {
 	font-weight: 700;
 }
 
+.center {
+	text-align: center;
+}
+
 /* Comments */
 .comments {
 	margin-top: .625rem;
