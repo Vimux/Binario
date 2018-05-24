@@ -1,4 +1,5 @@
 <footer class="footer">
+	{{- partial "footer_social.html" . }}
 	<div class="footer__copyright">© {{ now.Format "2006" }} {{ .Site.Title }}. <span class="footer__copyright-credits">{{ T "footer_credits" | safeHTML }}</span></div>
 </footer>
 <script src="{{ "js/modernizr.js" | relURL }}"></script>

@@ -32,6 +32,20 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #mainSections = ["post"] # Set main page sections
 #dateFormat = "2006-01-02" # change the format of dates
 
+[Params.Social]
+#facebook = "username"
+#twitter = "username"
+#telegram = "username"
+#googleplus = "profileid"
+#instagram = "username"
+#pinterest = "username"
+#vk = "username"
+#linkedin = "username"
+#github = "username"
+#gitlab = "username"
+#stackoverflow = "numberid"
+#mastodon = "username"
+
 [outputFormats]
   [outputFormats.MANIFEST]
     mediaType = "application/json"

@@ -1,0 +1,64 @@
+{{ if .Site.Params.social }}
+<div class="footer__social social">
+	{{- with .Param "social.facebook" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/{{ . }}">
+			{{ partial "svg/facebook.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.twitter" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/{{ . }}">
+			{{ partial "svg/twitter.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.telegram" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://t.me/{{ . }}">
+			{{ partial "svg/telegram.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.googleplus" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://plus.google.com/{{ . }}">
+			{{ partial "svg/googleplus.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.instagram" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}">
+			{{ partial "svg/instagram.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.pinterest" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.pinterest.com/{{ . }}">
+			{{ partial "svg/pinterest.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.vk" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://vk.com/{{ . }}">
+			{{ partial "svg/vk.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.linkedin" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/{{ . }}">
+			{{ partial "svg/linkedin.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.github" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://github.com/{{ . }}">
+			{{ partial "svg/github.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.gitlab" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://gitlab.com/{{ . }}">
+			{{ partial "svg/gitlab.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.stackoverflow" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://stackoverflow.com/users/{{ . }}">
+			{{ partial "svg/stackoverflow.svg" . }}
+		</a>
+	{{- end }}
+	{{- with .Param "social.mastodon" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://mastodon.social/@{{ . }}">
+			{{ partial "svg/mastodon.svg" . }}
+		</a>
+	{{- end }}
+</div>
+{{ end }}

@@ -750,6 +750,27 @@ mark {
 	border-top: 2px solid #333;
 }
 
+.footer__social {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: .5rem;
+}
+
+.social__link {
+	margin: .25rem;
+	font-size: 0;
+	background-color: #2a2a2a;
+	border: 1px solid #333;
+	fill: #999;
+	stroke: #999;
+}
+
+.social__link:hover {
+	fill: #c3c3c3;
+	stroke: #c3c3c3;
+}
+
 .footer__copyright {
 	text-align: center;
 }
