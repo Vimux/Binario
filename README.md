@@ -10,6 +10,7 @@
 * Card-based list layout
 * Internal Hugo templates for Open Graph and Twitter Cards meta data, google analytics, and Disqus comments
 * Table of contents
+* Related content
 
 
 ## Configuration
@@ -33,8 +34,6 @@ twitter_cards = true # Enable Twitter Cards if true
 cardsPerRow = 2 # Possible values: 1, 2, 3
 #mainSections = ["post"] # Set main page sections
 #dateFormat = "2006-01-02" # change the format of dates
-#comments: 
-#toc: true # 
 
 [Params.Social]
 #facebook = "username"
