@@ -706,6 +706,11 @@ mark {
 	margin-bottom: .625rem;
 }
 
+/*Related */
+.related {
+	margin-top: .625rem;
+}
+
 /* Pagination */
 .pagination {
 	margin-bottom: .625rem;
