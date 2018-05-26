@@ -1,4 +1,4 @@
-{{ if and .Site.DisqusShortname (not (or .Site.Params.comments .Params.comments)) }}
+{{ if and (.Site.DisqusShortname) (.Param "comments") }}
 <section class="comments block">
 	{{ template "_internal/disqus.html" . }}
 </section>
