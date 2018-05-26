@@ -226,7 +226,13 @@ kbd {
 }
 
 figure {
+	display: inline-block;
 	margin: 0 0 1rem;
+}
+
+figcaption {
+	background-color: #111;
+	padding: .5rem;
 }
 
 img {
