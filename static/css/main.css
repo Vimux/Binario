@@ -231,8 +231,8 @@ figure {
 }
 
 figcaption {
-	background-color: #111;
 	padding: .5rem;
+	background-color: #111;
 }
 
 img {
@@ -649,8 +649,8 @@ mark {
 .post__content {
 	flex: 1 0 auto;
 	margin: 0;
-	color: #c3c3c3;
 	overflow: auto;
+	color: #c3c3c3;
 }
 
 .post__content p:last-child {
@@ -804,5 +804,46 @@ mark {
 @media screen and (min-width: 480px) {
 	.footer {
 		margin: .3125rem .3125rem 0;
+	}
+}
+
+/* Print */
+@media print {
+	.post__content a,
+	.post__meta a,
+	.post__tag {
+		color: #000;
+		text-decoration: underline;
+	}
+
+	.logo,
+	.block,
+	.post__title,
+	.post__title-link,
+	.meta-categories__link,
+	.post__meta,
+	.post__content {
+		color: #000;
+	}
+
+	.main-nav,
+	.comments,
+	.post__toc,
+	.related,
+	.footer__copyright-credits {
+		display: none;
+	}
+
+	.header,
+	.block {
+		border: 0;
+	}
+
+	mark {
+		background: #25a;
+	}
+
+	blockquote {
+		border-color: #000;
 	}
 }
