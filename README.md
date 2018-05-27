@@ -32,6 +32,8 @@ description = "John Doe's Personal blog about everything" # Description of your 
 opengraph = true # Enable OpenGraph if true
 twitter_cards = true # Enable Twitter Cards if true
 cardsPerRow = 2 # Possible values: 1, 2, 3
+#toc: true # Enable Table of Contents for all site pages
+#comments: true # Enable comments for all site pages
 #mainSections = ["post"] # Set main page sections
 #dateFormat = "2006-01-02" # change the format of dates
 
