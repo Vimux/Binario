@@ -9,6 +9,14 @@
 			</div>
 		{{ end }}
 		</div>
+		{{- if eq $paginator.TotalNumberOfElements 0 }}
+			<div class="empty block center">
+				<div class="empty__icon">¯\_(ツ)_/¯</div>
+				<h3 class="empty__title">{{ T "empty_title" }}</h3>
+				<p class="empty__text">{{ T "empty_text_start" | safeHTML }} ({{ delimit (apply $mainSections "printf" "<code>content/%s</code>" ".") ", " | safeHTML }}), {{ T "empty_text_end" }}.</p>
+				<p class="empty__tip">{{ T "empty_tip" | safeHTML }}</p>
+			</div>
+		{{- end }}
 		{{ partial "pagination.html" . }}
 	</div>
 {{ partial "footer.html" . }}

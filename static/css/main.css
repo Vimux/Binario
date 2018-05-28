@@ -767,6 +767,18 @@ mark {
 	font-size: 1.5rem;
 }
 
+/* Empty state */
+.empty__icon {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+}
+
+.empty__tip {
+	padding: .5rem;
+	background-color: #202020;
+	margin: 4rem 0 0;
+}
+
 /* Footer */
 .footer {
 	padding: .625rem 0;

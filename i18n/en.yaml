@@ -16,6 +16,19 @@
 - id: footer_credits
   translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
 
+# "No posts" empty state
+- id: empty_title
+  translation: "You don't have any posts yet!"
+
+- id: empty_text_start
+  translation: "As posts are added in your <code>mainSection</code> folders"
+
+- id: empty_text_end
+  translation: "they'll appear here"
+
+- id: empty_tip
+  translation: "<b>Tip:</b> You could change <code>mainSection</code> folders in site config file."
+
 # 404
 - id: page404_title
   translation: "404 Page not found"
