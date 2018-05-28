@@ -53,6 +53,7 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #gitlab = "username"
 #stackoverflow = "numberid"
 #mastodon = "username"
+#medium = "username"
 
 [outputFormats]
   [outputFormats.MANIFEST]

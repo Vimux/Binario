@@ -60,5 +60,10 @@
 			{{ partial "svg/mastodon.svg" . }}
 		</a>
 	{{- end }}
+	{{- with .Param "social.medium" }}
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://medium.com/@{{ . }}">
+			{{ partial "svg/medium.svg" . }}
+		</a>
+	{{- end }}
 </div>
 {{ end }}
