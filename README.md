@@ -41,6 +41,7 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #mathjaxConfig: "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
 
 [Params.Social]
+#email = "example@example.com"
 #facebook = "username"
 #twitter = "username"
 #telegram = "username"
