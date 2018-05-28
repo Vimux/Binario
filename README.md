@@ -8,7 +8,7 @@
 
 * Responsive
 * Card-based list layout
-* Internal Hugo templates for Open Graph and Twitter Cards meta data, google analytics, and Disqus comments
+* Internal Hugo templates for Open Graph and Twitter Cards meta data, Google Analytics, and Disqus comments
 * Table of contents
 * Related content
 * MathJax
@@ -19,7 +19,7 @@
 
 ```toml
 baseurl = "/"
-title = "Your Site Title"
+title = "Binario"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "binario"
@@ -28,12 +28,12 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params]
 author = "John Doe" # Used in meta author. Optional
-description = "John Doe's Personal blog about everything" # Description of your site. Used in meta description
+description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
 opengraph = true # Enable OpenGraph if true
 twitter_cards = true # Enable Twitter Cards if true
 cardsPerRow = 2 # Possible values: 1, 2, 3
 #mainSections = ["post"] # Set main page sections
-#dateFormat = "2006-01-02" # change the format of dates
+#dateFormat = "January 02, 2006" # change the format of dates
 #toc: true # Enable Table of Contents for all site pages
 #comments: true # Enable comments for all site pages
 #mathjax: true # Enable MathJax for all site pages
