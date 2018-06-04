@@ -35,6 +35,7 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #mainSections = ["post"] # Set main page sections
 #dateFormat = "January 02, 2006" # change the format of dates
 #toc: true # Enable Table of Contents for all site pages
+#tocOpen: true # Open Table of Contents block. Optional
 #comments: true # Enable comments for all site pages
 #mathjax: true # Enable MathJax for all site pages
 #mathjaxPath: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js" # Specify MathJax path. Optional
@@ -55,6 +56,20 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #stackoverflow = "numberid"
 #mastodon = "username"
 #medium = "username"
+
+# Web App Manifest settings
+# https://www.w3.org/TR/appmanifest/
+# https://developers.google.com/web/fundamentals/web-app-manifest/
+[Params.Manifest]
+#name = "Binario"
+#shortName = "Binario"
+#display = "browser"
+#backgroundColor = "#2a2a2a"
+#themeColor = "#1b1b1b"
+#description = "Responsive card-based & code-light Hugo theme"
+#orientation = "portrait"
+#startUrl = "/"
+#scope = "/"
 
 [outputFormats]
   [outputFormats.MANIFEST]
