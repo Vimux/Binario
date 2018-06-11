@@ -674,7 +674,7 @@ mark {
 .post__tag {
 	display: inline-block;
 	padding: .25rem .5rem;
-	margin: 0 .3125rem .3125rem 0;
+	margin: .25rem;
 	line-height: 1.5;
 	background: #111;
 }
@@ -705,6 +705,62 @@ mark {
 .toc__title {
 	padding: .25rem;
 	font-weight: 700;
+}
+
+.post__footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+}
+
+.post__tags {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	margin: 0 -.25rem auto;
+}
+
+.post__share {
+	display: flex;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	margin: 0 -.25rem auto;
+}
+
+@media screen and (min-width: 720px) {
+	.post__tags {
+		flex: 1 0 65%;
+		justify-content: flex-start;
+	}
+
+	.post__share {
+		flex: 1 0 35%;
+		justify-content: flex-end;
+	}
+}
+
+.share__link {
+	background-color: #111;
+	margin: .25rem;
+	font-size: 0;
+}
+
+.share__link:hover {
+	margin: .25rem;
+	text-decoration: none;
+}
+
+.share__icon {
+	fill: #f8ae00;
+	stroke: #f8ae00;
+	width: 32px;
+	height: 32px;
+}
+
+.share__icon:hover {
+	fill: #fff;
+	stroke: #fff;
 }
 
 .alignleft {

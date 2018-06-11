@@ -57,6 +57,16 @@ cardsPerRow = 2 # Possible values: 1, 2, 3
 #mastodon = "username"
 #medium = "username"
 
+[Params.Share] # Post Share block
+#facebook = true
+#twitter = true
+#reddit = true
+#telegram = true
+#linkedin = true
+#googleplus = true
+#vk = true
+#pocket = true
+
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/
 # https://developers.google.com/web/fundamentals/web-app-manifest/
