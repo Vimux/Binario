@@ -809,6 +809,11 @@ mark {
 	stroke: #c3c3c3;
 }
 
+.social__icon {
+	width: 32px;
+	height: 32px;
+}
+
 .footer__copyright {
 	text-align: center;
 }
