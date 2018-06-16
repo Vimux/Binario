@@ -679,7 +679,7 @@ mark {
 	background: #111;
 }
 
-.post__toc {
+.toc {
 	padding: .5rem;
 	margin-bottom: 1rem;
 	color: #f8ae00;
@@ -687,24 +687,39 @@ mark {
 	background: #111;
 }
 
-.post__toc[open] {
+.toc[open] {
 	color: #fff;
-}
-
-.post__toc ul {
-	padding-top: 1rem;
-	padding-left: 0;
-	list-style: none;
-}
-
-.post__toc ul ul {
-	padding-top: 0;
-	padding-left: 2rem;
 }
 
 .toc__title {
 	padding: .25rem;
 	font-weight: 700;
+}
+
+.toc nav {
+	padding: .5rem 0 .5rem .5rem;
+}
+
+.toc ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.toc ul ul ul a {
+	padding-left: 25px;
+}
+
+.toc ul ul ul ul a {
+	padding-left: 45px;
+}
+
+.toc ul ul ul ul ul a {
+	padding-left: 65px;
+}
+
+.toc ul ul ul ul ul ul a {
+	padding-left: 85px;
 }
 
 .post__footer {
