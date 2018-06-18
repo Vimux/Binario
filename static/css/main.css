@@ -440,7 +440,7 @@ mark {
 	}
 
 	.block {
-		margin: .3125rem;
+		margin: .625rem .3125rem;
 		border-width: 1px;
 	}
 }
@@ -584,7 +584,7 @@ mark {
 
 /* Taxonomies */
 .page {
-	margin-top: .625rem;
+	margin-bottom: .3125rem;
 }
 
 .page__title {
@@ -593,11 +593,6 @@ mark {
 
 .page__content {
 	margin-top: 1rem;
-}
-
-/* Single */
-.single {
-	margin-top: .625rem;
 }
 
 /* Cards UI*/
@@ -609,12 +604,31 @@ mark {
 .card {
 	display: flex;
 	width: 100%;
-	padding: .1875rem 0;
+}
+
+.card:first-child {
+	border-top: 1px solid #333;
+}
+
+.card__box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+	border-width: 0 0 1px 0;
 }
 
 @media screen and (min-width: 480px) {
 	.card {
 		padding: .3125rem;
+	}
+
+	.card:first-child {
+		border: 0;
+	}
+
+	.card__box {
+		border-width: 1px;
 	}
 }
 
@@ -632,13 +646,6 @@ mark {
 	.card--3col {
 		width: 33.333%;
 	}
-}
-
-.card__box {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	margin: 0;
 }
 
 /* Post */
@@ -805,9 +812,15 @@ mark {
 
 /* Pagination */
 .pagination {
-	margin-bottom: .625rem;
+	margin: .3125rem 0;
 	text-align: center;
 	background-color: #2a2a2a;
+}
+
+@media screen and (min-width: 480px) {
+	.pagination {
+		margin: .3125rem .3125rem .625rem;
+	}
 }
 
 .pagination__item {
