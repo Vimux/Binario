@@ -101,3 +101,5 @@ Pull requests are very welcome too, but please make sure they match the existing
 ## License
 
 Binario is licensed under the [MIT License](https://github.com/vimux/binario/blob/master/LICENSE).
+
+* Social media icons based on [SuperTinyIcons](https://github.com/edent/SuperTinyIcons) [MIT]
