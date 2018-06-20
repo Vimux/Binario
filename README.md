@@ -13,6 +13,58 @@
 * Related content
 * MathJax
 
+## Installation
+
+*First of all, you will need to [install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and [create new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site).* After that, you ready to install **Binario**.
+
+There are three different ways you can install **Binario**:
+
+- **A**. [Git submodule (**Recommended**)](#step-1a-git-submodule-recommended)
+- **B**. [Git clone](#step-1b-git-clone)
+- **C**. [Download ZIP and manual install](#step-1c-download-zip-and-manual-install)
+
+*For more information read the [Install and Use Themes](https://gohugo.io/themes/installing-and-using-themes/)*
+
+### 1A. Git submodule (Recommended)
+
+In your Hugo site directory, run:
+
+```
+$ git submodule add https://github.com/vimux/binario themes/binario
+```
+
+Next, edit your `config.toml` configuration file and add parameter:
+
+```
+theme = "binario"
+```
+
+*You can [read the GitHub documentation for submodules](https://github.com/blog/2104-working-with-submodules) or those found on [Git's website](https://git-scm.com/book/en/v2/Git-Tools-Submodules) for more information*
+
+### 1B. Git clone
+
+In your Hugo site directory, run:
+
+```
+$ git clone https://github.com/vimux/binario themes/binario
+```
+
+Next, edit your `config.toml` configuration file and add parameter:
+
+```
+theme = "binario"
+```
+
+### 1C. Download ZIP and manual install
+
+[Download ZIP](https://github.com/vimux/binario/archive/master.zip) and extract to the `themes/binario`
+
+Next, edit your `config.toml` configuration file and add parameter:
+
+```
+theme = "binario"
+```
+
 ## Configuration
 
 ### Config.toml example
