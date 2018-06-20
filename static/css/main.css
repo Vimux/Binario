@@ -595,6 +595,14 @@ mark {
 	margin-top: 1rem;
 }
 
+.page__content--notitle {
+	margin: 0;
+}
+
+.page__content p:last-child {
+	margin-bottom: 0;
+}
+
 /* Cards UI*/
 .cards {
 	display: flex;
