@@ -79,59 +79,59 @@ disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params]
-author = "John Doe" # Used in meta author. Optional
-description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
-opengraph = true # Enable OpenGraph if true
-twitter_cards = true # Enable Twitter Cards if true
-cardsPerRow = 2 # Possible values: 1, 2, 3
-#mainSections = ["post"] # Set main page sections
-#dateFormat = "January 02, 2006" # change the format of dates
-#toc: true # Enable Table of Contents for all site pages
-#tocOpen: true # Open Table of Contents block. Optional
-#comments: true # Enable comments for all site pages
-#mathjax: true # Enable MathJax for all site pages
-#mathjaxPath: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js" # Specify MathJax path. Optional
-#mathjaxConfig: "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+  author = "John Doe" # Used in meta author. Optional
+  description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
+  opengraph = true # Enable OpenGraph if true
+  twitter_cards = true # Enable Twitter Cards if true
+  cardsPerRow = 2 # Possible values: 1, 2, 3
+  mainSections = ["post"] # Set main page sections
+  dateFormat = "January 02, 2006" # change the format of dates
+  toc = true # Enable Table of Contents for all site pages
+  tocOpen = true # Open Table of Contents block. Optional
+  comments = true # Enable comments for all site pages
+  mathjax = true # Enable MathJax for all site pages
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js" # Specify MathJax path. Optional
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
 
 [Params.Social]
-#email = "example@example.com"
-#facebook = "username"
-#twitter = "username"
-#telegram = "username"
-#googleplus = "profileid"
-#instagram = "username"
-#pinterest = "username"
-#vk = "username"
-#linkedin = "username"
-#github = "username"
-#gitlab = "username"
-#stackoverflow = "numberid"
-#mastodon = "username"
-#medium = "username"
+  email = "example@example.com"
+  facebook = "username"
+  twitter = "username"
+  telegram = "username"
+  googleplus = "profileid"
+  instagram = "username"
+  pinterest = "username"
+  vk = "username"
+  linkedin = "username"
+  github = "username"
+  gitlab = "username"
+  stackoverflow = "numberid"
+  mastodon = "username"
+  medium = "username"
 
 [Params.Share] # Post Share block
-#facebook = true
-#twitter = true
-#reddit = true
-#telegram = true
-#linkedin = true
-#googleplus = true
-#vk = true
-#pocket = true
+  facebook = true
+  twitter = true
+  reddit = true
+  telegram = true
+  linkedin = true
+  googleplus = true
+  vk = true
+  pocket = true
 
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/
 # https://developers.google.com/web/fundamentals/web-app-manifest/
 [Params.Manifest]
-#name = "Binario"
-#shortName = "Binario"
-#display = "browser"
-#backgroundColor = "#2a2a2a"
-#themeColor = "#1b1b1b"
-#description = "Responsive card-based & code-light Hugo theme"
-#orientation = "portrait"
-#startUrl = "/"
-#scope = "/"
+  name = "Binario"
+  shortName = "Binario"
+  display = "browser"
+  backgroundColor = "#2a2a2a"
+  themeColor = "#1b1b1b"
+  description = "Responsive card-based & code-light Hugo theme"
+  orientation = "portrait"
+  startUrl = "/"
+  scope = "/"
 
 [outputFormats]
   [outputFormats.MANIFEST]
