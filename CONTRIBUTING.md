@@ -9,7 +9,7 @@ Please take a moment to review this document in order to make the contribution p
 The [issue tracker](https://github.com/vimux/binario/issues) is the preferred channel for bug reports and features requests, but please respect the following restrictions:
 
 * Please **do not** combine a few problems or features in one issue. Create separate issues if needed.
-* Please **do not** create issue that contains title only. Write usefull description and title.
+* Please **do not** create issue that contains title only. Write useful title and description.
 * Please **do not** post comments consisting solely of "+1" or emoji. Use [GitHub's "reactions" feature](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) instead. The project maintainer reserve the right to delete such comments.
 * Please specify the exact steps to reproduce bug.
 
@@ -31,8 +31,8 @@ Please respect coding guidelines used throughout the project (indentation, accur
   * If the PR changes the UI it should include before-and-after screenshots or a link to a video
 * Be prepared to answer questions and make changes in your code
 
-**IMPORTANT: There is no guarantees that your pull request will be merged.**
+**IMPORTANT: No guarantees can be made that your pull request will be accepted.**
 
 ## License
 
-By contributing your code, you agree to license your contribution under the [MIT License](https://github.com/vimux/binario/blob/master/LICENSE).
+By contributing your code, you agree to license your contribution under the [MIT License](LICENSE).
