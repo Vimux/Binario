@@ -141,7 +141,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
     notAlternative = true
 
 [outputs]
-  home = ["HTML", "MANIFEST"]
+  home = ["HTML", "RSS", "MANIFEST"]
 ```
 
 ## Contributing
