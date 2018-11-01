@@ -1,3 +1,4 @@
+/* Reset */
 *,
 *::before,
 *::after {
@@ -623,7 +624,7 @@ mark {
 	flex-direction: column;
 	width: 100%;
 	margin: 0;
-	border-width: 0 0 1px 0;
+	border-width: 0 0 1px;
 }
 
 @media screen and (min-width: 480px) {
@@ -716,8 +717,8 @@ mark {
 }
 
 .toc ul {
-	margin: 0;
 	padding: 0;
+	margin: 0;
 	list-style: none;
 }
 
@@ -771,9 +772,9 @@ mark {
 }
 
 .share__link {
-	background-color: #111;
 	margin: .25rem;
 	font-size: 0;
+	background-color: #111;
 }
 
 .share__link:hover {
@@ -782,10 +783,10 @@ mark {
 }
 
 .share__icon {
-	fill: #f8ae00;
-	stroke: #f8ae00;
 	width: 32px;
 	height: 32px;
+	fill: #f8ae00;
+	stroke: #f8ae00;
 }
 
 .share__icon:hover {
@@ -813,7 +814,7 @@ mark {
 	margin-bottom: .625rem;
 }
 
-/*Related */
+/* Related */
 .related {
 	margin-top: .625rem;
 }
@@ -861,14 +862,14 @@ mark {
 
 /* Empty state */
 .empty__icon {
-	font-size: 3.5rem;
 	margin-bottom: 2rem;
+	font-size: 3.5rem;
 }
 
 .empty__tip {
 	padding: .5rem;
-	background-color: #202020;
 	margin: 4rem 0 0;
+	background-color: #202020;
 }
 
 /* Footer */
