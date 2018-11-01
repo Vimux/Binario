@@ -3,22 +3,53 @@
   "version": "1.0.0",
   "description": "Responsive card-based & code-light Hugo theme",
   "license": "MIT",
+  "browserslist": [
+    "> 0.25%",
+    "last 2 version",
+    "not dead",
+    "IE 11",
+    "iOS >= 9"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "cascade": false
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "indent": [2, "tab"],
+      "no-tabs": 0
+    }
+  },
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^9.2.1",
+    "eclint": "^2.8.0",
     "eslint": "^4.19.1",
-    "eslint-config-happiness": "^10.2.1",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^6.0.1",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
+    "postcss-cli": "^6.0.1",
     "stylelint": "^9.6.0",
     "stylelint-order": "^1.0.0"
   },
   "scripts": {
-    "lint": "npm-run-all --parallel lint:*",
+    "lint:editorconfig": "eclint check '**/*.{html,css,js,json,md,toml,yaml,yml}'",
+    "lint:prefixes": "postcss static/css/*.css",
     "lint:css": "stylelint static/css/*.css",
     "lint:js": "eslint static/js/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:editorconfig",
+    "fix:editorconfig": "eclint fix '**/*.{html,css,js,json,md,toml,yaml,yml}'",
+    "fix:prefixes": "postcss -r static/css/*.css",
+    "fix:css": "stylelint static/css/*.css --fix",
+    "fix:js": "eslint static/js/*.js --fix",
+    "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js && npm run fix:editorconfig",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
