@@ -1,9 +1,7 @@
-{{ partial "header.html" . }}
-<div class="main">
-	<div class="page404 block center">
-		<h1 class="page404__title">{{ T "page404_title" }}</h1>
-		<p class="page404__lead">{{ T "page404_lead" }}</p>
-		<a class="page404__link" href="">{{ T "page404_link" }}</a>
-	</div>
+{{ define "main" }}
+<div class="page404 block center">
+	<h1 class="page404__title">{{ T "page404_title" }}</h1>
+	<p class="page404__lead">{{ T "page404_lead" }}</p>
+	<a class="page404__link" href="">{{ T "page404_link" }}</a>
 </div>
-{{ partial "footer.html" . }}
+{{ end }}
