@@ -448,7 +448,6 @@ mark {
 
 .logo {
 	display: inline-block;
-	float: left;
 	padding: 0.625rem .75rem;
 	font-size: 16px;
 	font-weight: 700;
@@ -459,11 +458,19 @@ mark {
 	text-decoration: none;
 }
 
+.js .logo {
+	float: left;
+}
+
 /* Menu */
 .main-menu {
 	display: block;
 	font-size: 0;
 	font-weight: 700;
+}
+
+.no-js .main-nav__btn {
+	display: none;
 }
 
 .main-nav__btn {
