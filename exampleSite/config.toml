@@ -1,0 +1,12 @@
+baseURL = "https://example.com/"
+title = "Binario"
+languageCode = "en-us"
+paginate = 10
+theme = "binario"
+
+[Params]
+  author = "John Doe"
+  description = "Responsive card-based & code-light Hugo theme"
+  cardsPerRow = 2
+  mainSections = ["post"]
+  dateFormat = "January 02, 2006"
