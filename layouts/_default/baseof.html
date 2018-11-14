@@ -17,8 +17,12 @@
 	{{ with .OutputFormats.Get "rss" -}}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{ end -}}
-	<link rel="manifest" href="{{ "manifest.json" | relURL }}">
-	{{ if not .Site.IsServer }}{{ template "_internal/google_analytics_async.html" . }}{{ end }}
+	{{- if and (.Site.Params.Manifest) ((.Site.GetPage "home").OutputFormats.Get "manifest") -}}
+		<link rel="manifest" href="{{ "manifest.json" | relURL }}">
+	{{- end }}
+	{{- if not .Site.IsServer }}
+		{{ template "_internal/google_analytics_async.html" . }}
+	{{- end }}
 </head>
 <body>
 	{{ partial "header" . }}
