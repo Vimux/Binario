@@ -1,10 +1,12 @@
 {{ define "main" }}
-	<div class="cards">
-		{{ range .Paginator.Pages }}
-			<div class="card{{ if $.Param "cardsPerRow" }} card--{{ $.Param "cardsPerRow" }}col{{ else }} card--2col{{ end }}">
-				{{ .Render "summary" }}
-			</div>
-		{{ end }}
-	</div>
+	<main class="main">
+		<div class="cards">
+			{{ range .Paginator.Pages }}
+				<div class="card{{ if $.Param "cardsPerRow" }} card--{{ $.Param "cardsPerRow" }}col{{ else }} card--2col{{ end }}">
+					{{ .Render "summary" }}
+				</div>
+			{{ end }}
+		</div>
+	</main>
 	{{ partial "pagination.html" . }}
 {{ end }}

@@ -1,19 +1,21 @@
 {{ define "main" }}
-	<div class="single block">
-		<article class="post">
-			{{- partial "post_thumbnail.html" (dict "page" . ) }}
-			<div class="post__meta meta mb">{{ partial "post_meta.html" . }}</div>
-			<h1 class="post__title">{{ .Title }}</h1>
-			{{- partial "post_toc.html" . }}
-			<div class="post__content">{{ .Content }}</div>
-			{{ if or (.Param "share") (isset $.Params "tags") }}
-			<footer class="post__footer">
-				{{ partial "post_tags.html" . }}
-				{{ partial "post_share.html" . }}
-			</footer>
-			{{ end }}
-		</article>
-	</div>
+	<main class="main">
+		<div class="single block">
+			<article class="post">
+				{{- partial "post_thumbnail.html" (dict "page" . ) }}
+				<div class="post__meta meta mb">{{ partial "post_meta.html" . }}</div>
+				<h1 class="post__title">{{ .Title }}</h1>
+				{{- partial "post_toc.html" . }}
+				<div class="post__content">{{ .Content }}</div>
+				{{ if or (.Param "share") (isset $.Params "tags") }}
+				<footer class="post__footer">
+					{{ partial "post_tags.html" . }}
+					{{ partial "post_share.html" . }}
+				</footer>
+				{{ end }}
+			</article>
+		</div>
+	</main>
 	{{ partial "related.html" . }}
 	{{ partial "comments.html" . }}
 {{ end }}
