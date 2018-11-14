@@ -1,4 +1,4 @@
-/* Reset */
+/* CSS Reset (based on Bootstrap Reboot v4.1.3) */
 *,
 *::before,
 *::after {
@@ -9,7 +9,6 @@ html {
 	font-family: sans-serif;
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
 	-webkit-tap-highlight-color: transparent;
 }
@@ -147,10 +146,6 @@ blockquote footer {
 	text-align: right;
 }
 
-dfn {
-	font-style: italic;
-}
-
 b,
 strong {
 	font-weight: bolder;
@@ -180,7 +175,6 @@ a {
 	color: #f8ae00;
 	text-decoration: none;
 	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
 }
 
 a:hover {
@@ -242,7 +236,7 @@ img {
 	border-style: none;
 }
 
-svg:not(:root) {
+svg {
 	overflow: hidden;
 }
 
@@ -310,7 +304,7 @@ select {
 }
 
 button,
-html [type="button"],
+[type="button"],
 [type="reset"],
 [type="submit"] {
 	-webkit-appearance: button;
@@ -371,7 +365,6 @@ legend {
 	-webkit-appearance: none;
 }
 
-[type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
 	-webkit-appearance: none;
 }
@@ -611,7 +604,7 @@ mark {
 	margin-bottom: 0;
 }
 
-/* Cards UI*/
+/* Cards UI */
 .cards {
 	display: flex;
 	flex-wrap: wrap;

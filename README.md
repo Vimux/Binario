@@ -155,3 +155,4 @@ Pull requests are very welcome too, but please make sure they match the existing
 Binario is licensed under the [MIT License](https://github.com/vimux/binario/blob/master/LICENSE).
 
 * Social media icons based on [SuperTinyIcons](https://github.com/edent/SuperTinyIcons) [MIT]
+* CSS Reset based on [Bootstrap Reboot](https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-reboot.css) [MIT]
