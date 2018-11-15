@@ -1,9 +1,9 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
-{{ with $related }}
+{{ if and ($related) (.Param "related") }}
 <div class="related block">
 	<h3 class="related__title">{{ T "related_title" }}</h3>
 	<ul class="related__list">
-		{{ range . }}
+		{{ range $related }}
 		<li class="related__item"><a class="related__link" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 		{{ end }}
 	</ul>

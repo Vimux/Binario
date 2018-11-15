@@ -89,6 +89,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   toc = true # Enable Table of Contents for all site pages
   tocOpen = true # Open Table of Contents block. Optional
   comments = true # Enable comments for all site pages
+  related = true # Enable Related content for single pages
   mathjax = true # Enable MathJax for all site pages
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
