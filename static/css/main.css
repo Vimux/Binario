@@ -407,6 +407,16 @@ mark {
 	text-align: right;
 }
 
+.btn {
+	background-color: #111;
+	border-radius: 3px;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #000;
+}
+
 /* Header */
 .header {
 	margin: 0 0 .3125rem;
@@ -692,7 +702,6 @@ mark {
 	padding: .25rem .5rem;
 	margin: .25rem;
 	line-height: 1.5;
-	background: #111;
 }
 
 .toc {
@@ -774,7 +783,6 @@ mark {
 .share__link {
 	margin: .25rem;
 	font-size: 0;
-	background-color: #111;
 }
 
 .share__link:hover {

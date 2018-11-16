@@ -1,42 +1,42 @@
 {{- if and .IsPage (.Param "share") }}
 <div class="post__share share">
 	{{- if .Param "share.facebook" }}
-	<a class="share__link" title="{{ T "share-caption" }} Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
 		{{ partial "svg/facebook.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.twitter" }}
-	<a class="share__link" title="{{ T "share-caption" }} Twitter" href="https://twitter.com/intent/tweet/?url={{ .Permalink }}&amp;text={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} Twitter" href="https://twitter.com/intent/tweet/?url={{ .Permalink }}&amp;text={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Twitter', 'width=800,height=450,resizable=yes,toolbar=0,status=0'); return false">
 		{{ partial "svg/twitter.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.reddit" }}
-	<a class="share__link" title="{{ T "share-caption" }} Reddit" href="https://www.reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} Reddit" href="https://www.reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Reddit', 'width=832,height=624,toolbar=0,status=0'); return false">
 		{{ partial "svg/reddit.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.telegram" }}
-	<a class="share__link" title="{{ T "share-caption" }} Telegram" href="https://t.me/share/url?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Telegram', 'width=800,height=600,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} Telegram" href="https://t.me/share/url?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Telegram', 'width=800,height=600,toolbar=0,status=0'); return false">
 		{{ partial "svg/telegram.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.linkedin" }}
-	<a class="share__link" title="{{ T "share-caption" }} LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} LinkedIn', 'width=640,height=480,toolbar=0,status=0'); return false">
 		{{ partial "svg/linkedin.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.googleplus" }}
-	<a class="share__link" title="{{ T "share-caption" }} Google+" href="https://plus.google.com/share?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Google+', 'width=640,height=480,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} Google+" href="https://plus.google.com/share?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Google+', 'width=640,height=480,toolbar=0,status=0'); return false">
 		{{ partial "svg/googleplus.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.vk" }}
-	<a class="share__link" title="{{ T "share-caption" }} VK" href="https://vk.com/share.php?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} VK', 'width=640,height=480,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "share-caption" }} VK" href="https://vk.com/share.php?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} VK', 'width=640,height=480,toolbar=0,status=0'); return false">
 		{{ partial "svg/vk.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
 	{{- if .Param "share.pocket" }}
-	<a class="share__link" title="{{ T "save-caption" }} Pocket" href="https://getpocket.com/edit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "save-caption" }} Pocket', 'width=480,height=320,toolbar=0,status=0'); return false">
+	<a class="share__link btn" title="{{ T "save-caption" }} Pocket" href="https://getpocket.com/edit?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "save-caption" }} Pocket', 'width=480,height=320,toolbar=0,status=0'); return false">
 		{{ partial "svg/pocket.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
