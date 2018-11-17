@@ -2,7 +2,7 @@
 	<main class="main">
 		<div class="single block">
 			<article class="post">
-				{{- partial "post_thumbnail.html" (dict "page" . ) }}
+				{{- partial "post_thumbnail.html" (dict "page" .) }}
 				{{- partial "post_meta.html" (dict "dot" . "class" "mb") }}
 				<h1 class="post__title">{{ .Title }}</h1>
 				{{- partial "post_toc.html" . }}

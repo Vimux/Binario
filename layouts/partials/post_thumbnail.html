@@ -1,6 +1,13 @@
-{{- $img := ( .page.Resources.ByType "image").GetMatch "thumbnail.*" }}
+{{- $img := (.page.Resources.ByType "image").GetMatch "thumbnail.*" }}
+{{- $link := .link }}
 {{- with $img }}
 	<figure class="post__thumbnail thumbnail">
-		<img class="thumbnail__img" src="{{ $img.RelPermalink }}" alt="{{ $img.Title }}">
+		{{- with $link }}
+		<a class="thumbnail__link" href="{{ . }}">
+			<img class="thumbnail__img" src="{{ $img.RelPermalink }}" alt="{{ $img.Title }}">
+		</a>
+		{{- else }}
+			<img class="thumbnail__img" src="{{ $img.RelPermalink }}" alt="{{ $img.Title }}">
+		{{- end }}
 	</figure>
 {{- end }}
