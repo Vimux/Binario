@@ -482,6 +482,7 @@ mark {
 	height: 42px;
 	padding: 0;
 	font-size: 1em;
+	cursor: pointer;
 	background-color: #2a2a2a;
 	border: 0;
 	border-left: 1px solid #333;
