@@ -78,6 +78,11 @@ theme = "binario"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
+[Author] # Used in authorbox
+  name = "John Doe"
+  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer."
+  avatar = "img/avatar.png"
+
 [Params]
   author = "John Doe" # Used in meta author. Optional
   description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
@@ -87,6 +92,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mainSections = ["post"] # Set main page sections
   post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
+  authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages
   tocOpen = true # Open Table of Contents block. Optional
   comments = true # Enable comments for all site pages

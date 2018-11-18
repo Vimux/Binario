@@ -1,0 +1,21 @@
+{{- if .Param "authorbox" }}
+<div class="authorbox block">
+	<div class="author">
+		{{- with .Site.Author.avatar }}
+		<figure class="author__avatar">
+			<img class="author__img" alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}"  height="90" width="90">
+		</figure>
+		{{- end }}
+		<div class="author__body">
+			<div class="author__name">
+				{{ .Site.Author.name }}
+			</div>
+			{{- with .Site.Author.bio }}
+			<div class="author__bio">
+				{{- . -}}
+			</div>
+			{{- end }}
+		</div>
+	</div>
+</div>
+{{- end }}

@@ -816,6 +816,30 @@ mark {
 	text-align: center;
 }
 
+/* Authorbox */
+.author {
+	display: flex;
+	align-items: flex-start;
+}
+
+.author__avatar {
+	margin-right: .875rem;
+	margin-bottom: 0;
+}
+
+.author__img {
+	border-radius: 50%;
+}
+
+.author__body {
+	flex: 1;
+}
+
+.author__name {
+	margin-bottom: .625rem;
+	font-weight: 700;
+}
+
 /* Comments */
 .comments {
 	margin-top: .625rem;
