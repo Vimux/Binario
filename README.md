@@ -2,6 +2,8 @@
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
+**[Demo](https://binario.netlify.com/)**
+
 ![Binario theme screenshot](https://github.com/vimux/binario/blob/master/images/tn.png)
 
 **Features:**
@@ -84,7 +86,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   avatar = "img/avatar.png"
 
 [Params]
-  author = "John Doe" # Used in meta author. Optional
   description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
@@ -150,6 +151,27 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [outputs]
   home = ["HTML", "RSS", "MANIFEST"]
+```
+
+### Front Matter example
+
+```yaml
+---
+title: "Example article title"
+date: "2017-08-21"
+description: "Example article description"
+comments: true # Enable/disable Disqus comments for specific post
+authorbox: true # Enable/disable Authorbox for specific post
+toc: true # Enable/disable Table of Contents for specific post
+mathjax: true # Enable/disable MathJax for specific post
+categories:
+  - "Category 1"
+  - "Category 2"
+tags:
+  - "Tag"
+  - "Another tag"
+menu: main # Add page to a main menu
+---
 ```
 
 ## Contributing
