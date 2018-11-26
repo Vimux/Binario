@@ -8,7 +8,7 @@
 		{{- end }}
 		<div class="cards">
 			{{ range .Paginator.Pages }}
-				<div class="card{{ if $.Param "cardsPerRow" }} card--{{ $.Param "cardsPerRow" }}col{{ else }} card--2col{{ end }}">
+				<div class="card{{ if and (ge ($.Param "cardsPerRow") 1) (le ($.Param "cardsPerRow") 3) }} card--{{ $.Param "cardsPerRow" }}col{{ else }} card--2col{{ end }}">
 					{{ .Render "summary" }}
 				</div>
 			{{ end }}
