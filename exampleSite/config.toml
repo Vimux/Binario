@@ -5,7 +5,6 @@ paginate = 10
 theme = "binario"
 
 [Params]
-  author = "John Doe"
   description = "Responsive card-based & code-light Hugo theme"
   cardsPerRow = 2
   mainSections = ["post"]
