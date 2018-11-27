@@ -170,7 +170,7 @@ categories:
 tags:
   - "Tag"
   - "Another tag"
-menu: main # Add page to a main menu
+menu: main # Add page to a menu. Options: main, footer
 ---
 ```
 
