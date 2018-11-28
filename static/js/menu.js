@@ -10,6 +10,4 @@ function toggleMenu() {
 	);
 }
 
-if (toggle && menu) {
-	toggle.addEventListener('click', toggleMenu, false);
-}
+toggle.addEventListener('click', toggleMenu, false);

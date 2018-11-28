@@ -36,7 +36,9 @@
 	{{ end }}
 	</div>
 	{{ partial "footer" . }}
+{{- with .Site.Menus.main }}
 <script src="{{ "js/menu.js" | relURL }}"></script>
+{{- end }}
 {{- partial "mathjax.html" . -}}
 </body>
 </html>
