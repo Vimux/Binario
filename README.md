@@ -174,6 +174,8 @@ menu: main # Add page to a menu. Options: main, footer
 ---
 ```
 
+For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/content-management/front-matter) from Hugo official documentation.
+
 ## Contributing
 
 Have a bug? [Please open a new issue](https://github.com/vimux/binario/issues/new).
