@@ -477,21 +477,43 @@ mark {
 }
 
 .main-nav__btn {
+	display: block;
 	float: right;
-	width: 42px;
-	height: 42px;
 	padding: 0;
 	font-size: 1em;
 	cursor: pointer;
 	background-color: #2a2a2a;
 	border: 0;
 	border-left: 1px solid #333;
+	outline: 0;
 	fill: #f8ae00;
 }
 
 .main-nav__btn:focus,
 .main-nav__btn:hover {
 	color: #000;
+}
+
+.main-nav__btn-box {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 42px;
+	height: 42px;
+}
+
+:focus > .main-nav__btn-box {
+	box-shadow: inset 0 0 1px 3px #4285f4;
+}
+
+button:not(:-moz-focusring):focus > .main-nav__btn-box {
+	box-shadow: none;
+}
+
+.main-nav__btn:focus,
+.main-nav__btn-box:focus {
+	outline: none;
 }
 
 .main-nav__btn .icon-menu__burger {
