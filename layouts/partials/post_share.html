@@ -25,11 +25,6 @@
 		{{ partial "svg/linkedin.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
-	{{- if .Param "share.googleplus" }}
-	<a class="share__link btn" title="{{ T "share-caption" }} Google+" href="https://plus.google.com/share?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Google+', 'width=640,height=480,toolbar=0,status=0'); return false">
-		{{ partial "svg/googleplus.svg" (dict "class" "share__icon" ) }}
-	</a>
-	{{- end }}
 	{{- if .Param "share.vk" }}
 	<a class="share__link btn" title="{{ T "share-caption" }} VK" href="https://vk.com/share.php?url={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} VK', 'width=640,height=480,toolbar=0,status=0'); return false">
 		{{ partial "svg/vk.svg" (dict "class" "share__icon" ) }}

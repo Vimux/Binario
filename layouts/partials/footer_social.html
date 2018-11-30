@@ -20,11 +20,6 @@
 			{{ partial "svg/telegram.svg" (dict "class" "social__icon" ) }}
 		</a>
 	{{- end }}
-	{{- with .Param "social.googleplus" }}
-		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://plus.google.com/{{ . }}">
-			{{ partial "svg/googleplus.svg" (dict "class" "social__icon" ) }}
-		</a>
-	{{- end }}
 	{{- with .Param "social.instagram" }}
 		<a class="social__link" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/{{ . }}">
 			{{ partial "svg/instagram.svg" (dict "class" "social__icon" ) }}
