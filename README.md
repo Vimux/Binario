@@ -155,13 +155,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 ```yaml
 ---
+# Common-Defined params
 title: "Example article title"
 date: "2017-08-21"
+lastmod: "2018-12-21"
 description: "Example article description"
-comments: true # Enable/disable Disqus comments for specific post
-authorbox: true # Enable/disable Authorbox for specific post
-toc: true # Enable/disable Table of Contents for specific post
-mathjax: true # Enable/disable MathJax for specific post
 categories:
   - "Category 1"
   - "Category 2"
@@ -169,6 +167,13 @@ tags:
   - "Tag"
   - "Another tag"
 menu: main # Add page to a menu. Options: main, footer
+
+# Theme-Defined params
+comments: true # Enable/disable Disqus comments for specific post
+authorbox: true # Enable/disable Authorbox for specific post
+toc: true # Enable/disable Table of Contents for specific post
+mathjax: true # Enable/disable MathJax for specific post
+related: true # Enable/disable Related content for specific post
 ---
 ```
 
