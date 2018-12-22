@@ -1,0 +1,77 @@
+[[icons]]
+id = "email"
+url = "mailto:%s"
+icon = "svg/email.svg"
+weight = 10
+
+[[icons]]
+id = "facebook"
+url = "https://www.facebook.com/%s"
+icon = "svg/facebook.svg"
+weight = 20
+
+[[icons]]
+id = "twitter"
+url = "https://twitter.com/%s"
+icon = "svg/twitter.svg"
+weight = 30
+
+[[icons]]
+id = "telegram"
+url = "https://t.me/%s"
+icon = "svg/telegram.svg"
+weight = 40
+
+[[icons]]
+id = "instagram"
+url = "https://www.instagram.com/%s"
+icon = "svg/instagram.svg"
+weight = 50
+
+[[icons]]
+id = "pinterest"
+url = "https://www.pinterest.com/%s"
+icon = "svg/pinterest.svg"
+weight = 60
+
+[[icons]]
+id = "vk"
+url = "https://vk.com/%s"
+icon = "svg/vk.svg"
+weight = 70
+
+[[icons]]
+id = "linkedin"
+url = "https://linkedin.com/in/%s"
+icon = "svg/linkedin.svg"
+weight = 80
+
+[[icons]]
+id = "github"
+url = "https://github.com/%s"
+icon = "svg/github.svg"
+weight = 90
+
+[[icons]]
+id = "gitlab"
+url = "https://gitlab.com/%s"
+icon = "svg/gitlab.svg"
+weight = 100
+
+[[icons]]
+id = "stackoverflow"
+url = "https://stackoverflow.com/users/%s"
+icon = "svg/stackoverflow.svg"
+weight = 110
+
+[[icons]]
+id = "mastodon"
+url = "https://mastodon.social/@%s"
+icon = "svg/mastodon.svg"
+weight = 120
+
+[[icons]]
+id = "medium"
+url = "https://medium.com/@%s"
+icon = "svg/medium.svg"
+weight = 130
