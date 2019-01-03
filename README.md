@@ -87,6 +87,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params]
   description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
+  copyright = "Binario" # Copyright holder, otherwise will use .Site.Title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
   cardsPerRow = 2 # Possible values: 1, 2, 3
