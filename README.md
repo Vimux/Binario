@@ -19,7 +19,7 @@
 
 *First of all, you will need to [install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and [create new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site).* After that, you ready to install **Binario**.
 
-There are three different ways you can install **Binario**:
+There are three different ways you can install **Binario**. Choose one of the installation methods listed below and follow the instructions.
 
 - **A**. [Git submodule (**Recommended**)](#step-1a-git-submodule-recommended)
 - **B**. [Git clone](#step-1b-git-clone)
@@ -32,7 +32,7 @@ There are three different ways you can install **Binario**:
 In your Hugo site directory, run:
 
 ```
-$ git submodule add https://github.com/vimux/binario themes/binario
+git submodule add https://github.com/vimux/binario themes/binario
 ```
 
 Next, edit your `config.toml` configuration file and add parameter:
@@ -48,7 +48,7 @@ theme = "binario"
 In your Hugo site directory, run:
 
 ```
-$ git clone https://github.com/vimux/binario themes/binario
+git clone https://github.com/vimux/binario themes/binario
 ```
 
 Next, edit your `config.toml` configuration file and add parameter:
@@ -67,7 +67,19 @@ Next, edit your `config.toml` configuration file and add parameter:
 theme = "binario"
 ```
 
+***
+
+After that, you can run your site in Hugo server mode:
+
+```
+hugo server
+```
+
+After you make sure that **Binario** works, you may start customizing the theme. You can change [number of columns](#columns), activate [footer social icons](#footer-social-icons) & [share buttons](#share-buttons) and much more.
+
 ## Configuration
+
+Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the site root) as the default site config file. Here is Binario configuration example in TOML with theme-specific config params:
 
 ### Config.toml example
 
@@ -90,7 +102,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   copyright = "Binario" # Copyright holder, otherwise will use .Site.Title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
-  cardsPerRow = 2 # Possible values: 1, 2, 3
+  columns = 2 # Set the number of cards columns. Possible values: 1, 2, 3
   mainSections = ["post"] # Set main page sections
   post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
@@ -153,7 +165,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   home = ["HTML", "RSS", "MANIFEST"]
 ```
 
+For more information about Hugo configuration files and all common configuration settings, please read [Configure Hugo](https://gohugo.io/getting-started/configuration) from Hugo official documentation.
+
 ### Front Matter example
+
+Hugo supports three formats for front matter: `yaml`, `toml` and `json`. Here is Front Matter example in YAML:
 
 ```yaml
 ---
@@ -179,7 +195,23 @@ related: true # Enable/disable Related content for specific post
 ---
 ```
 
-For more information about front matter variables read [Hugo Front Matter](https://gohugo.io/content-management/front-matter) from Hugo official documentation.
+For more information about front matter variables and formats read [Hugo Front Matter](https://gohugo.io/content-management/front-matter) from Hugo official documentation.
+
+### Columns
+
+By default, **Binario** works with two columns layout (only if it possible by screen size), but you can also use one column or three columns. Change `Params.columns`to preferable value. You can also change this option for specific list pages.
+
+### Share buttons
+
+To display share buttons, set up `[Params.Share]` specific parameters in your site config file.
+
+Available share buttons: Facebook, Twitter, Reddit, Telegram, LinkedIn, VK, Pocket
+
+### Footer Social Icons
+
+With **Binario**, you have the option to display social icons in the footer. To display them, set up `[Params.Social]` specific parameters in your site config file.
+
+Available social services: Email, Facebook, Twitter, Telegram, Instagram, Pinterest, VK, LinkedIn, GitHub, GitLab, Stack Overflow, Mastodon, Medium
 
 ## Contributing
 
