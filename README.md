@@ -115,6 +115,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mathjax = true # Enable MathJax for all site pages
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+  hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
 [Params.Social]
   email = "example@example.com"
