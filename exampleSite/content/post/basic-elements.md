@@ -1,7 +1,7 @@
 ---
 title: Basic HTML Elements
 description: Example test article that contains basic HTML elements for text formatting on the Web.
-date: 2018-04-16
+date: 2019-01-15
 categories:
   - "Development"
 tags:
@@ -137,6 +137,8 @@ You can also use inline Markdown.
 </body>
 </html>
 ```
+
+## Highlighted Code
 
 {{< highlight html >}}
 <!DOCTYPE html>
