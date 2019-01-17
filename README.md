@@ -18,9 +18,9 @@
 ## Table of Contents
 
 - [Installation](#installation)
-  - [1A. Git clone](#option-a-git-clone)
-  - [1B. Git submodule](#option-b-git-submodule)
-  - [1C. Download ZIP and manual install](#step-1b-git-submodule)
+  - [Option A. Git clone](#option-a-git-clone)
+  - [Option B. Git submodule](#option-b-git-submodule)
+  - [Option C. Download ZIP and manual install](#option-c-download-zip-and-manual-install)
 - [Configuration](#configuration)
   - [Config.toml example](#configtoml-example)
   - [Front Matter example](#front-matter-example)
@@ -95,11 +95,13 @@ You can run your site in Hugo server mode:
 hugo server
 ```
 
+Now you can go to [localhost:1313](http://localhost:1313) webpage and the Binario theme should be visible.
+
 After you make sure that **Binario** works, you may start customizing the theme. You can change [number of columns](#columns), activate [footer social icons](#footer-social-icons), [share buttons](#share-buttons) and much more.
 
 ## Configuration
 
-Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the site root) as the default site config file. Here is Binario configuration example in TOML with theme-specific config params:
+Hugo uses the `config.toml`, `config.yaml`, or `config.json` (if found in the site root) as the default site config file. Here is Binario configuration example in TOML with all available theme-specific config params:
 
 ### Config.toml example
 
