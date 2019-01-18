@@ -128,6 +128,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mainSections = ["post"] # Set main page sections
   post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
+  customCSS = ["css/custom.css"] # Include custom CSS files
   authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages
   tocOpen = true # Open Table of Contents block. Optional
