@@ -26,6 +26,7 @@
   - [Front Matter example](#front-matter-example)
   - [Configuration options](#configuration-options)
     - [Columns](#columns)
+    - [Custom CSS](#custom-css)
     - [Post Meta](#post-meta)
     - [Related Content](#related-content)
     - [Share Buttons](#share-buttons)
@@ -97,7 +98,7 @@ hugo server
 
 Now you can go to [localhost:1313](http://localhost:1313) webpage and the Binario theme should be visible.
 
-After you make sure that **Binario** works, you may start customizing the theme. You can change [number of columns](#columns), activate [footer social icons](#footer-social-icons), [share buttons](#share-buttons) and much more.
+After you make sure that **Binario** works, you may start customizing the theme if it's needed. You can change [number of columns](#columns), activate [footer social icons](#footer-social-icons), [share buttons](#share-buttons) and [much more](#configuration-options).
 
 ## Configuration
 
@@ -228,6 +229,24 @@ Binario includes some customizable configuration options that may be useful.
 #### Columns
 
 By default, Binario works with two columns layout (if it possible by screen size) for list pages, but you can also use one column or three columns layout. Change `Params.columns`to preferable value (from 1 to 3). You can also change this option for specific list pages.
+
+#### Custom CSS
+
+If you want to include custom CSS files, you need to assign an array of references in site config file (`config.toml` by default) like following:
+
+```toml
+[Params]
+  customCSS = ["css/custom.css"]
+```
+
+Of course, you can reference as many CSS files as you want. Their paths need to be relative to the `static` folder of your Hugo site:
+
+```toml
+[Params]
+  customCSS = ["css/custom.css", "css/another.css"]
+```
+
+All these CSS files will be added through the `head.html` partial after the built-in CSS file.
 
 #### Post Meta
 
