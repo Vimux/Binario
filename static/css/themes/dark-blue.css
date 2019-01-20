@@ -1,0 +1,28 @@
+a {
+	color: #77baff;
+}
+
+blockquote {
+	border-color: #77baff;
+}
+
+mark {
+	background-color: #77baff;
+}
+
+.logo:hover {
+	color: #77baff;
+}
+
+.main-nav__btn {
+	fill: #77baff;
+}
+
+.toc {
+	color: #77baff;
+}
+
+.share__icon {
+	fill: #77baff;
+	stroke: #77baff;
+}

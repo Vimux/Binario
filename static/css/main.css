@@ -217,7 +217,7 @@ kbd {
 	padding: 2px 3px;
 	font-weight: 700;
 	color: #111;
-	background: #888;
+	background-color: #888;
 }
 
 figure {
@@ -728,7 +728,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	margin-bottom: 1rem;
 	color: #f8ae00;
 	list-style: none;
-	background: #111;
+	background-color: #111;
 }
 
 .toc[open] {
@@ -1002,7 +1002,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	}
 
 	mark {
-		background: #25a;
+		background-color: #25a;
 	}
 
 	blockquote {

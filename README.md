@@ -10,6 +10,7 @@
 
 * Responsive
 * Card-based list layout
+* Color themes
 * Internal Hugo templates for Open Graph and Twitter Cards meta data, Google Analytics, and Disqus comments
 * Table of contents
 * Related content
@@ -121,7 +122,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   avatar = "img/avatar.png"
 
 [Params]
-  description = "Responsive card-based & code-light Hugo theme" # Description of your site. Used in meta description
+  description = "Responsive card-based & code-light Hugo theme" # Site Description. Used in meta description
   copyright = "Binario" # Copyright holder, otherwise will use .Site.Title
   opengraph = true # Enable OpenGraph if true
   twitter_cards = true # Enable Twitter Cards if true
@@ -129,6 +130,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mainSections = ["post"] # Set main page sections
   post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
+  colorTheme = "dark-green" # dark-green, dark-blue
   customCSS = ["css/custom.css"] # Include custom CSS files
   authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages

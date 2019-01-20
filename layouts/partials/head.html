@@ -16,6 +16,9 @@
 	{{- range .Site.Params.customCSS }}
 	<link rel="stylesheet" href="{{ . | relURL }}">
 	{{- end }}
+	{{- with .Site.Params.colorTheme }}
+	<link rel="stylesheet" href="{{ (printf "css/themes/%s.css" .) | relURL }}">
+	{{- end }}
 	<link rel="icon" href="{{ "icons/16.png" | relURL }}" sizes="16x16" type="image/png">
 	<link rel="icon" href="{{ "icons/32.png" | relURL }}" sizes="32x32" type="image/png">
 	{{- with .OutputFormats.Get "rss" }}
