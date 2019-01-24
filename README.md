@@ -81,7 +81,7 @@ theme = "binario"
 
 ### Option C. Download ZIP and manual install
 
-**[Download ZIP](https://github.com/vimux/binario/archive/master.zip)** and extract to the `themes/binario`
+**[Download ZIP](https://github.com/vimux/binario/archive/master.zip)** and extract to the `themes/binario` within your Hugo website.
 
 Next, edit your `config.toml` configuration file and add parameter:
 
@@ -130,7 +130,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mainSections = ["post"] # Set main page sections
   post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
-  colorTheme = "dark-green" # dark-green, dark-blue
+  colorTheme = "" # dark-green, dark-blue
   customCSS = ["css/custom.css"] # Include custom CSS files
   authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages
@@ -230,7 +230,7 @@ Binario includes some customizable configuration options that may be useful.
 
 #### Columns
 
-By default, Binario works with two columns layout (if it possible by screen size) for list pages, but you can also use one column or three columns layout. Change `Params.columns`to preferable value (from 1 to 3). You can also change this option for specific list pages.
+By default, Binario works with two columns card layout (if it possible by screen size) for list pages, but you can also use one or three columns layout. Change `Params.columns`to preferable value (from 1 to 3). You can also change this option for specific list pages in frontmatter params.
 
 #### Custom CSS
 
