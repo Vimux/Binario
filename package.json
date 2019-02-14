@@ -23,7 +23,10 @@
       "browser": true
     },
     "rules": {
-      "indent": [2, "tab"],
+      "indent": [
+        2,
+        "tab"
+      ],
       "no-tabs": 0
     }
   },
@@ -35,7 +38,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "postcss-cli": "^6.0.1",
-    "stylelint": "^9.6.0",
+    "stylelint": "^9.10.1",
     "stylelint-order": "^1.0.0"
   },
   "scripts": {
