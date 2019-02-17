@@ -132,6 +132,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   dateFormat = "January 02, 2006" # Change the format of dates
   colorTheme = "" # dark-green, dark-blue, dark-red, dark-violet
   customCSS = ["css/custom.css"] # Include custom CSS files
+  mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
   authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages
   tocOpen = true # Open Table of Contents block. Optional

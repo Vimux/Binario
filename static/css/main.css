@@ -598,12 +598,16 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	}
 
 	.main-nav {
-		display: inline-block;
+		display: flex;
 	}
 
 	.main-nav__item {
 		display: inline-block;
 		border: 0;
+	}
+
+	.main-nav__list--right {
+		margin-left: auto;
 	}
 
 	.main-nav__list.main-nav__list--active {
