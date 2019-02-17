@@ -580,7 +580,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	background-color: #2a2a2a;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 920px) {
 	.logo {
 		display: inline-block;
 	}
