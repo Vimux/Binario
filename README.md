@@ -1,4 +1,4 @@
-# Binario [WIP]
+# Binario
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
