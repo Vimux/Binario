@@ -451,7 +451,7 @@ mark {
 
 .logo {
 	display: inline-block;
-	padding: 0.625rem .75rem;
+	padding: .625rem .875rem;
 	font-size: 16px;
 	font-weight: 700;
 }
@@ -556,7 +556,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 
 .main-nav__link {
 	display: block;
-	padding: .625rem;
+	padding: .625rem .875rem;
 }
 
 .main-nav__list {
@@ -613,6 +613,10 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	.main-nav__list.main-nav__list--active {
 		position: initial;
 		border: 0;
+	}
+
+	.main-nav__link {
+		padding: .625rem;
 	}
 }
 
