@@ -5,15 +5,17 @@
 			{{ with .Content }}<div class="page__content page__content--notitle">{{ . }}</div>{{ end }}
 		</div>
 		{{- end }}
-		<div class="cards">
 		{{- $mainSections := .Site.Params.mainSections }}
 		{{- $paginator := .Paginate (where .Data.Pages "Section" "in" $mainSections) }}
-		{{- range $paginator.Pages }}
-			<div class="card{{ if and (ge ($.Param "columns") 1) (le ($.Param "columns") 3) }} card--{{ $.Param "columns" }}col{{ else }} card--2col{{ end }}">
-			{{ .Render "summary" }}
+		{{- if gt $paginator.TotalNumberOfElements 0 }}
+			<div class="cards">
+				{{- range $paginator.Pages }}
+					<div class="card{{ if and (ge ($.Param "columns") 1) (le ($.Param "columns") 3) }} card--{{ $.Param "columns" }}col{{ else }} card--2col{{ end }}">
+					{{ .Render "summary" }}
+					</div>
+				{{- end }}
 			</div>
 		{{- end }}
-		</div>
 		{{- if and (not .Site.Params.hideNoPostsWarning) (eq $paginator.TotalNumberOfElements 0) }}
 			<div class="empty block center">
 				<div class="empty__icon">¯\_(ツ)_/¯</div>
