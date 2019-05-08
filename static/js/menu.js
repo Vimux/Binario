@@ -6,7 +6,7 @@ function toggleMenu() {
 	this.classList.toggle('main-nav__btn--active');
 	this.setAttribute(
 		'aria-expanded',
-		this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true',
+		this.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
 	);
 }
 
