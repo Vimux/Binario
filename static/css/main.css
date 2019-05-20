@@ -699,6 +699,10 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	font-size: 1.25rem;
 }
 
+.post__thumbnail {
+	min-height: 1px; /* Workaround for IE11 flexbox img height issue https://github.com/philipwalton/flexbugs/issues/75 */
+}
+
 .post__content {
 	flex: 1 0 auto;
 	margin: 0;
