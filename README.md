@@ -309,7 +309,7 @@ After that, you can specify `[Params.Manifest]` parameters.
 
 Have a bug? [Please open a new issue](https://github.com/vimux/binario/issues/new).
 
-Pull requests are very welcome too, but please make sure they match the existing [contributing guide](https://github.com/vimux/binario/wiki/contributing).
+Pull requests are very welcome too, but please make sure they match the existing [contributing guide](https://github.com/vimux/binario/blob/master/CONTRIBUTING.md).
 
 ## License
 
