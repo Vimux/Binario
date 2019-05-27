@@ -305,6 +305,8 @@ After that, you can specify `[Params.Manifest]` parameters.
 
 *To verify that your manifest file is configured properly and works well, run Hugo server and open Chrome DevTools (Press F12 in Chrome) → Application → Manifest*
 
+*If you use Apache as a web server, you may have difficulty accessing files in the icons folder within your root dir. Check [Issue #4](https://github.com/Vimux/Binario/issues/4) for more information.*
+
 ## Contributing
 
 Have a bug? [Please open a new issue](https://github.com/vimux/binario/issues/new).
