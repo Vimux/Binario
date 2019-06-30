@@ -1,0 +1,35 @@
+{{- $raw := .}}
+{{- $parts := split $raw "@"}}
+{{- $definstance := "mastodon.social"}}
+{{- if eq (len $parts) 1}}
+	{{- /* maintain compat with original (see #8) */}}
+	{{- printf "https://%s/@%s" $definstance $raw}}
+{{- else if eq (len $parts) 2}}
+	{{- if eq (index $parts 0) ""}}
+		{{- /* parse local usernames relative to mastodon.social */}}
+		{{- if eq (index $parts 1) ""}}
+			{{errorf "failed to parse mastodon username %q: no username or instance" $raw}}
+		{{end}}
+		{{- printf "https://%s/@%s" $definstance (index $parts 1)}}
+	{{- else}}
+		{{- /* parse usernames written in email format */}}
+		{{- if eq (index $parts 1) ""}}
+			{{errorf "failed to parse mastodon username %q: invalid format" $raw}}
+		{{end}}
+		{{- printf "https://%s/@%s" (index $parts 1) (index $parts 0)}}
+	{{- end}}
+{{- else if eq (len $parts) 3}}
+	{{- /* parse mastodon usernames written correctly */}}
+	{{- if ne (index $parts 0) ""}}
+		{{errorf "failed to parse mastodon username %q: leading garbage" $raw}}
+	{{end}}
+	{{- if eq (index $parts 1) ""}}
+		{{errorf "failed to parse mastodon username %q: missing username" $raw}}
+	{{end}}
+	{{- if eq (index $parts 2) ""}}
+		{{errorf "failed to parse mastodon username %q: missing instance" $raw}}
+	{{- end}}
+	{{- printf "https://%s/@%s" (index $parts 2) (index $parts 1)}}
+{{- else}}
+	{{errorf "failed to parse mastodon username %q: too many @'s" $raw}}
+{{end}}

@@ -2,50 +2,7 @@
 <div class="footer__social social">
 	{{- range sort .Site.Data.social.icons "weight" }}
 		{{- if isset $.Site.Params.Social .id }}
-		{{- $url := ""}}
-		{{- if eq .id "mastodon"}}
-			{{- $raw := (index $.Site.Params.Social .id)}}
-			{{- $parts := split $raw "@"}}
-			{{- $instance := "mastodon.social"}}
-			{{- $username := $raw}}
-			{{- if eq (len $parts) 1}}
-				{{- /* maintain compat with original (see #8) */}}
-			{{- else if eq (len $parts) 2}}
-				{{- if eq (index $parts 0) ""}}
-					{{- /* parse local usernames relative to mastodon.social */}}
-					{{- if eq (index $parts 1) ""}}
-						{{errorf "failed to parse mastodon username %q: no username or instance" $raw}}
-					{{end}}
-					{{- $username = index $parts 1}}
-				{{- else}}
-					{{- /* parse usernames written in email format */}}
-					{{- if eq (index $parts 1) ""}}
-						{{errorf "failed to parse mastodon username %q: invalid format" $raw}}
-					{{end}}
-					{{- $username = index $parts 0}}
-					{{- $instance = index $parts 1}}
-				{{- end}}
-			{{- else if eq (len $parts) 3}}
-				{{- /* parse mastodon usernames written correctly */}}
-				{{- if ne (index $parts 0) ""}}
-					{{errorf "failed to parse mastodon username %q: leading garbage" $raw}}
-				{{end}}
-				{{- if eq (index $parts 1) ""}}
-					{{errorf "failed to parse mastodon username %q: missing username" $raw}}
-				{{end}}
-				{{- if eq (index $parts 2) ""}}
-					{{errorf "failed to parse mastodon username %q: missing instance" $raw}}
-				{{- end}}
-				{{- $username = index $parts 1}}
-				{{- $instance = index $parts 2}}
-			{{- else}}
-				{{errorf "failed to parse mastodon username %q: too many @'s" $raw}}
-			{{end}}
-			{{- $url = printf .url $instance $username}}
-		{{- else}}
-			{{- $url = printf .url (index $.Site.Params.Social .id)}}
-		{{- end}}
-		<a class="social__link" target="_blank" rel="noopener noreferrer" href="{{ $url }}">
+		<a class="social__link" target="_blank" rel="noopener noreferrer" href="{{if eq .id "mastodon"}}{{partial "footer_social_mastodonurl.tmpl" (index $.Site.Params.Social .id)}}{{else}}{{printf .url (index $.Site.Params.Social .id)}}{{end}}">
 			{{ partial .icon (dict "class" "social__icon") }}
 		</a>
 		{{- end }}
