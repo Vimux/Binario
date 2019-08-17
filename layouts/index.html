@@ -6,7 +6,7 @@
 		</div>
 		{{- end }}
 		{{- $mainSections := .Site.Params.mainSections }}
-		{{- $paginator := .Paginate (where .Data.Pages "Section" "in" $mainSections) }}
+		{{- $paginator := .Paginate (where .Site.RegularPages "Type" "in" $mainSections) }}
 		{{- if gt $paginator.TotalNumberOfElements 0 }}
 			<div class="cards">
 				{{- range $paginator.Pages }}
