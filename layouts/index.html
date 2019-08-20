@@ -1,8 +1,8 @@
 {{ define "main" }}
 	<main class="main">
-		{{- if .Content }}
+		{{- with .Content }}
 		<div class="page block">
-			{{ with .Content }}<div class="page__content page__content--notitle">{{ . }}</div>{{ end }}
+			<div class="page__content page__content--notitle">{{ . }}</div>
 		</div>
 		{{- end }}
 		{{- $mainSections := .Site.Params.mainSections }}
