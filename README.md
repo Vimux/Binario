@@ -140,7 +140,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   related = true # Enable Related content for single pages
   relatedMax = 5 # Set the maximum number of posts that can be displayed in related block. Optional
   mathjax = true # Enable MathJax for all site pages
-  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" # Specify MathJax path. Optional
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
