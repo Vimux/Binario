@@ -4,10 +4,18 @@
   "display": "{{ .Site.Params.Manifest.display | default "browser" }}",
   "background_color": "{{ .Site.Params.Manifest.backgroundColor | default "#2a2a2a" }}",
   "theme_color": "{{ .Site.Params.Manifest.themeColor | default "#1b1b1b" }}",
-  {{- with .Site.Params.Manifest.description }}"description": "{{ . }}",{{ end }}
-  {{- with .Site.Params.Manifest.orientation }}"orientation": "{{ . }}",{{ end }}
-  {{- with .Site.Params.Manifest.startUrl }}"start_url": "{{ . }}",{{ end }}
-  {{- with .Site.Params.Manifest.scope }}"scope": "{{ . }}",{{ end }}
+  {{- with .Site.Params.Manifest.description }}
+  "description": "{{ . }}",
+  {{- end }}
+  {{- with .Site.Params.Manifest.orientation }}
+  "orientation": "{{ . }}",
+  {{- end }}
+  {{- with .Site.Params.Manifest.startUrl }}
+  "start_url": "{{ . }}",
+  {{- end }}
+  {{- with .Site.Params.Manifest.scope }}
+  "scope": "{{ . }}",
+  {{- end }}
   "icons": [
     {
       "src": "icons/192.png",
