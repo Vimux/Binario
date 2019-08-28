@@ -183,11 +183,11 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   name = "Binario"
   shortName = "Binario"
   display = "browser"
+  startUrl = "/"
   backgroundColor = "#2a2a2a"
   themeColor = "#1b1b1b"
   description = "Responsive card-based & code-light Hugo theme"
   orientation = "portrait"
-  startUrl = "/"
   scope = "/"
 
 [outputFormats]
@@ -301,8 +301,8 @@ Stack Overflow, Mastodon, Medium
 site info like name, description, icons, etc. This file tells the browser about your web application and how it should
 behave when "installed" (as PWA) on the users mobile device or desktop.
 
-To activate Web App Manifest you need to define `MANIFEST` custom output format & specify `[Params.Manifest]` parameters
-in your site config file.
+To activate Web App Manifest, define `MANIFEST` as custom output format and include this for `home` Kind attribute in
+your site config file. Here's how to make it.
 
 First of all, you should define `MANIFEST` custom output format [`config.toml`]:
 
@@ -322,7 +322,25 @@ Then, include `MANIFEST` output format for `home` Kind attribute [`config.toml`]
   home = ["HTML", "RSS", "MANIFEST"]
 ```
 
-After that, you can specify `[Params.Manifest]` parameters.
+After that, Web App Manifest file will be generated. Still, it's better to specify `[Params.Manifest]` params to make
+sure that everything works as expected.
+
+| Web App Manifest Property | `.Site.Params.Manifest` Key | Default Value | Type        |
+| ------------------------- | --------------------------- | ------------- | ----------- |
+| name                      | name                        | `.Site.Title` | required    |
+| short_name                | shortName                   | `.Site.Title` | required    |
+| display                   | display                     | `browser`     | required    |
+| start_url                 | startUrl                    | `/`           | required    |
+| background_color          | backgroundColor             | `#2a2a2a`     | recommended |
+| theme_color               | themeColor                  | `#1b1b1b`     | recommended |
+| description               | description                 |               | recommended |
+| orientation               | orientation                 |               | recommended |
+| scope                     | scope                       |               | recommended |
+| icons\*                   |                             |               | required    |
+
+\* You can't customize manifest icons through config params, only replacing `icons/192.png` and `icons/512.png` files.
+
+---
 
 *To verify that your manifest file is configured properly and works well, run Hugo server and open
 Chrome DevTools (Press F12 in Chrome) → Application → Manifest*
