@@ -263,7 +263,7 @@ your Hugo site:
   customCSS = ["css/custom.css", "css/another.css"]
 ```
 
-All these CSS files will be added through the `head.html` partial after the built-in CSS file.
+All custom CSS files will be added in the `head` section of a `baseof.html` right after the built-in CSS file.
 
 #### Post Meta
 
