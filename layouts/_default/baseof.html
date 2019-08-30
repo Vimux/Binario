@@ -50,5 +50,8 @@
 <script src="{{ "js/menu.js" | relURL }}"></script>
 {{- end }}
 {{- partial "mathjax.html" . -}}
+{{- range .Site.Params.customJS }}
+<script src="{{ . | relURL }}"></script>
+{{- end }}
 </body>
 </html>

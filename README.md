@@ -28,6 +28,7 @@
   - [Configuration options](#configuration-options)
     - [Columns](#columns)
     - [Custom CSS](#custom-css)
+    - [Custom JS](#custom-js)
     - [Post Meta](#post-meta)
     - [Related Content](#related-content)
     - [Share Buttons](#share-buttons)
@@ -140,6 +141,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   dateFormat = "January 02, 2006" # Change the format of dates
   colorTheme = "" # dark-green, dark-blue, dark-red, dark-violet
   customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
   mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
   authorbox = true # Show authorbox at bottom of single pages if true
   toc = true # Enable Table of Contents for all site pages
@@ -264,6 +266,26 @@ your Hugo site:
 ```
 
 All custom CSS files will be added in the `head` section of a `baseof.html` right after the built-in CSS file.
+
+#### Custom JS
+
+You can add custom JavaScript files by assigning an array of references in site config file (`config.toml` by default)
+like following:
+
+```toml
+[Params]
+  customJS = ["js/custom.js"]
+```
+
+And of course, just like with custom CSS, you can reference as many JS files as you want. Their paths need to be
+relative to the `static` folder of your Hugo site:
+
+```toml
+[Params]
+  customJS = ["js/custom.js", "js/another.js"]
+```
+
+All custom JS files will be added before closing body tag of a `baseof.html` file.
 
 #### Post Meta
 
