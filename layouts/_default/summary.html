@@ -1,6 +1,8 @@
 <article class="post card__box block">
 	{{- partial "post_thumbnail.html" (dict "page" . "link" .RelPermalink) }}
 	<h1 class="post__title title-excerpt"><a class="post__title-link" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-	<div class="post__content">{{- .Summary }}</div>
+	{{- with .Summary }}
+	<div class="post__content">{{ . }}</div>
+	{{- end }}
 	{{- partial "post_meta.html" (dict "dot" . "class" "mt tar") }}
 </article>
