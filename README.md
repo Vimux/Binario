@@ -177,6 +177,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   linkedin = true
   vk = true
   pocket = true
+  pinterest = true
 
 # Web App Manifest settings
 # https://www.w3.org/TR/appmanifest/

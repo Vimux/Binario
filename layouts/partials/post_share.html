@@ -35,5 +35,11 @@
 		{{ partial "svg/pocket.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
+	{{- if .Param "share.pinterest" }}
+	<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
+	<a class="share__link btn" title="{{ T "save-caption" }} Pinterest" href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-pin-custom=true>
+		{{ partial "svg/pinterest.svg" (dict "class" "share__icon" ) }}
+	</a>
+	{{- end }}
 </div>
 {{- end }}
