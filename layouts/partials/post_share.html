@@ -35,5 +35,10 @@
 		{{ partial "svg/pocket.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
+	{{- if .Param "share.pinterest" }}
+	<a class="share__link btn" title="{{ T "save-caption" }} Pinterest" href="https://pinterest.com/pin/create/button/?url={{ .Permalink }}&description={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "save-caption" }} Pocket', 'width=800,height=720,toolbar=0,status=0'); return false">
+		{{ partial "svg/pinterest.svg" (dict "class" "share__icon" ) }}
+	</a>
+	{{- end }}
 </div>
 {{- end }}
