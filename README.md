@@ -303,7 +303,7 @@ More information available at [Hugo Related Content](https://gohugo.io/content-m
 
 To display share buttons, set up `[Params.Share]` specific parameters in your site config file.
 
-Available share buttons: Facebook, Twitter, Reddit, Telegram, LinkedIn, VK, Pocket
+Available share buttons: Facebook, Twitter, Reddit, Telegram, LinkedIn, VK, Pocket, Pinterest
 
 #### Thumbnail Image
 
