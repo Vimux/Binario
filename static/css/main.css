@@ -699,8 +699,28 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	font-size: 1.25rem;
 }
 
-.post__thumbnail {
+.post__featured {
+	width: 100%;
 	min-height: 1px; /* Workaround for IE11 flexbox img height issue https://github.com/philipwalton/flexbugs/issues/75 */
+	text-align: center;
+	background-color: #1f1f1f;
+}
+
+.featured__figcaption {
+	width: 100%;
+	padding: 1rem;
+	text-align: left;
+	background-color: #111;
+}
+
+.featured__credit::before {
+	content: "© ";
+}
+
+.featured__credit {
+	font-size: .875rem;
+	font-style: normal;
+	color: #888;
 }
 
 .post__content {

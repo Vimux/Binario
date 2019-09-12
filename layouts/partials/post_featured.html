@@ -1,0 +1,41 @@
+{{- with .page.Resources.ByType "image" }}
+	{{- $link := $.link -}}
+	{{- $IsSingle := $.IsSingle -}}
+	{{- $match := $.page.Params.featured -}}
+	{{- $featuredMap := "" -}}
+
+	{{- $IsMap := reflect.IsMap $match -}}
+	{{- if $IsMap }}
+		{{- $featuredMap = $match -}}
+		{{- $match = $match.url -}}
+	{{- end }}
+
+	{{- $featured := .GetMatch ($match | default "{featured.*,thumbnail.*}") -}}
+	{{ if and $featured (not (and $IsSingle ($.page.Param "featured.previewOnly"))) }}
+		<figure class="post__featured featured">
+			{{- with $link }}<a class="featured__link" href="{{ . }}">{{ end }}
+				<img class="featured__img" src="{{ $featured.RelPermalink }}" alt="
+					{{- with $featuredMap -}}
+						{{- .alt | default $featured.Title -}}
+					{{- else -}}
+						{{- $featured.Title -}}
+					{{- end -}}
+				"/>
+			{{- with $link }}</a>{{ end }}
+			{{- with $IsSingle }}
+				{{- with $featuredMap }}
+					{{- if or .caption .credit }}
+					<figcaption class="featured__figcaption">
+						{{- with .caption }}
+						<div class="featured__caption">{{ . | markdownify }}</div>
+						{{- end }}
+						{{- with .credit }}
+						<cite class="featured__credit">{{ . | markdownify }}</cite>
+						{{- end }}
+					</figcaption>
+					{{- end }}
+				{{- end }}
+			{{- end }}
+		</figure>
+	{{- end }}
+{{- end }}

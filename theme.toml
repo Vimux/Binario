@@ -5,7 +5,7 @@ description = "Responsive card-based & code-light Hugo theme"
 homepage = "https://github.com/vimux/binario/"
 tags = ["blog", "dark", "disqus", "google analytics", "responsive"]
 features = []
-min_version = "0.38"
+min_version = "0.54.0"
 
 [author]
   name = "Vimux"
