@@ -1,11 +1,14 @@
 ---
 title: Translation Support
 description: With Hugo i18n possibilities, you can easily have a website in your language. This article explains how to translate and change language in Hugo's generated site.
-date: 2019-01-12
+date: 2019-09-22
 tags:
   - "Translation"
   - "i18n"
   - "Hugo"
+featured:
+  alt: Translation support
+  previewOnly: true
 ---
 
 With Hugo i18n possibilities, you can easily have a website in your language. This Hugo theme is ready to be translated into other languages. You can create a special file that contains translated text to show the visitor instead of English.

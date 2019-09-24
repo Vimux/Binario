@@ -1,7 +1,7 @@
 ---
 title: MathJax
 description: Simple MathJax example test article
-date: 2019-01-13
+date: 2019-09-23
 mathjax: true
 tags:
   - "MathJax"
