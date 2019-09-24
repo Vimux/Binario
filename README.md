@@ -32,7 +32,7 @@
     - [Post Meta](#post-meta)
     - [Related Content](#related-content)
     - [Share Buttons](#share-buttons)
-    - [Thumbnail Image](#thumbnail-image)
+    - [Featured Image](#featured-image)
     - [Footer Social Icons](#footer-social-icons)
     - [Web App Manifest](#web-app-manifest)
 - [Contributing](#contributing)
@@ -153,6 +153,9 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
+
+[Params.Featured]
+  previewOnly = false # Show only preview featured image
 
 [Params.Social]
   email = "example@example.com"
@@ -305,10 +308,33 @@ To display share buttons, set up `[Params.Share]` specific parameters in your si
 
 Available share buttons: Facebook, Twitter, Reddit, Telegram, LinkedIn, VK, Pocket, Pinterest
 
-#### Thumbnail Image
+#### Featured Image
 
-You can add thumbnail image to your content page. Just put `thumbnail.*` image file in
+There are two main different ways to add a featured image for a page.
+
+**Option 1.** Put `featured.*` or `thumbnail.*` image file in the
 [page bundle](https://gohugo.io/content-management/page-bundles/).
+
+**Option 2.** Put any image in the page bundle & specify `featured` param in the page's front matter.
+
+You may put any image in the page bundle and specify `featured` param in the page's front matter:
+
+```yaml
+featured: image.jpg
+```
+
+Or you can add some additional params like `alt`, `caption`, `credit` and `previewOnly`:
+
+```yaml
+featured:
+  url: image.jpg
+  alt: A scale model of the Eiffel tower standing on a map
+  caption: Eiffel tower model
+  credit: Unknown author
+  previewOnly: false
+```
+
+**Note**: `caption` and `credit` appear only on single pages, not summaries.
 
 #### Footer Social Icons
 
