@@ -7,4 +7,3 @@ theme = "binario"
 [Params]
   description = "Responsive card-based & code-light Hugo theme"
   columns = 2
-  dateFormat = "January 02, 2006"
