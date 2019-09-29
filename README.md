@@ -235,6 +235,12 @@ authorbox: true # Enable/disable Authorbox for specific post
 toc: true # Enable/disable Table of Contents for specific post
 mathjax: true # Enable/disable MathJax for specific post
 related: true # Enable/disable Related content for specific post
+featured:
+  url: image.jpg # relative path of the image
+  alt: A scale model of the Eiffel tower # alternate text for the image
+  caption: Eiffel tower model # image caption
+  credit: Unknown author # image credit
+  previewOnly: false # show only preview image (true/false)
 ---
 ```
 
