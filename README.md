@@ -299,7 +299,13 @@ All custom JS files will be added before closing body tag of a `baseof.html` fil
 
 #### Post Meta
 
-You may activate post meta fields with `.Site.Params.post_meta` parameter.
+Post metadata are relevant information about your post such as published date, last modified date, category, etc. You
+may activate post meta fields with `post_meta` parameter in config:
+
+```toml
+[Params]
+  post_meta = ["date", "categories"]
+```
 
 #### Related Content
 
