@@ -4,5 +4,5 @@
 	{{- with .Summary }}
 	<div class="post__content">{{ . }}</div>
 	{{- end }}
-	{{- partial "post_meta.html" (dict "dot" . "class" "mt tar") }}
+	{{- partial "post_meta.html" (dict "page" . "class" "mt tar") }}
 </article>
