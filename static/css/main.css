@@ -606,6 +606,21 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 		border: 0;
 	}
 
+	.main-nav__item--active {
+		padding: .625rem .625rem .5rem;
+		border-bottom: 2px solid #888;
+	}
+
+	.main-nav__link {
+		padding: .625rem .625rem .5rem;
+		border-bottom: 2px solid transparent;
+	}
+
+	.main-nav__link:hover {
+		text-decoration: none;
+		border-color: #666;
+	}
+
 	.main-nav__list--right {
 		margin-left: auto;
 	}
@@ -613,10 +628,6 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	.main-nav__list.main-nav__list--active {
 		position: initial;
 		border: 0;
-	}
-
-	.main-nav__link {
-		padding: .625rem;
 	}
 }
 
