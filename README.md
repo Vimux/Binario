@@ -41,8 +41,8 @@
 ## Installation
 
 *First of all, you will need to [install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
-[create new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). Also, you have git installed
-on your machine and you are familiar with basic git usage. After that, you ready to install **Binario**.*
+[create a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). Also, you have git
+installed on your machine and you are familiar with basic git usage. After that, you ready to install **Binario**.*
 
 There are three different ways you can install **Binario**. Choose one of the installation methods listed below and
 follow the instructions.
