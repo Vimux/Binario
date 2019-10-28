@@ -42,6 +42,8 @@ body {
 	line-height: 1.4;
 	color: #ddd;
 	text-align: left;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
 	background-color: #1b1b1b;
 	-webkit-font-smoothing: antialiased;
 }
