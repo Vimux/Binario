@@ -2,24 +2,31 @@
 
 Looking to contribute something to **Binario** theme? Bug reports and code patches are welcome.
 
-Please take a moment to review this document in order to make the contribution process easy and effective for everyone involved.
+Please take a moment to review this document in order to make the contribution process easy and effective for everyone
+involved.
 
 ## Issues
 
-The [issue tracker](https://github.com/vimux/binario/issues) is the preferred channel for bug reports and features requests, but please respect the following restrictions:
+The [issue tracker](https://github.com/vimux/binario/issues) is the preferred channel for bug reports and features
+requests, but please respect the following restrictions:
 
 * Please **do not** combine a few problems or features in one issue. Create separate issues if needed.
 * Please **do not** create issue that contains title only. Write useful title and description.
-* Please **do not** post comments consisting solely of "+1" or emoji. Use [GitHub's "reactions" feature](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) instead. The project maintainer reserve the right to delete such comments.
+* Please **do not** post comments consisting solely of "+1" or emoji. Use
+[GitHub's "reactions" feature](https://github.com/blog/2119-add-reactions-to-pull-requests-issues-and-comments) instead.
+The project maintainer reserve the right to delete such comments.
 * Please specify the exact steps to reproduce bug.
 
 ## Pull requests (PR)
 
-**Please ask first** before embarking on any significant pull request (e.g. implementing features or refactoring code), otherwise you risk spending a lot of time working on something that the project maintainer might not want to merge into the project.
+**Please ask first** before embarking on any significant pull request (e.g. implementing features or refactoring code),
+otherwise you risk spending a lot of time working on something that the project maintainer might not want to merge into
+the project.
 
-**IMPORTANT: By submitting a patch, you agree to allow the project owner to license your work under the terms of the [MIT License](LICENSE).**
+**IMPORTANT: By submitting a patch, you agree to allow the project owner to license your work under the terms of the
+[MIT License](LICENSE).**
 
-Please respect coding guidelines used throughout the project (indentation, accurate comments, etc.) and our PR acceptance criteria.
+Please respect coding guidelines used throughout the project and our PR acceptance criteria.
 
 ### PR acceptance criteria
 
