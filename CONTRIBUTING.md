@@ -70,7 +70,7 @@ comments and it may take some time to complete.
   * Be minified to a single line with no formatting
   * Not contain any JS or CSS section inside it
   * Not contain any additional transformations (matrix, translate, scale)
-  * Сompatible with [MIT License](LICENSE.md)
+  * Сompatible with [MIT License](LICENSE)
 * Maintain clean commit history and use meaningful commit messages. Pull Requests with messy commit history (with
 commit messages like "update", "another update", etc) are difficult to review and won't be merged, even if the changes
 are good enough
@@ -102,4 +102,4 @@ to those feedback, otherwise the PR will be closed after 2-4 weeks of inactivity
 
 ## License
 
-By contributing to Binario, you agree that your contributions will be licensed under [MIT License](LICENSE.md).
+By contributing to Binario, you agree that your contributions will be licensed under [MIT License](LICENSE).
