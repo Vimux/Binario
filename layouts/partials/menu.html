@@ -11,9 +11,16 @@
 	<ul id="menu" class="main-nav__list{{ if eq .Site.Params.mainMenuAlignment "right" }} main-nav__list--right{{ end }}">
 		{{- $currentNode := . }}
 		{{- range sort .Site.Menus.main }}
-		{{- if .Name }}
-		<li class="main-nav__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} main-nav__item--active{{ end }}">{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }}{{ .Name }}{{ else }}<a class="main-nav__link" href="{{ .URL }}">{{ .Name }}</a>{{ end }}</li>
-		{{- end }}
+			{{- $current := (or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .)) }}
+			{{- if .Name }}
+			<li class="main-nav__item{{ if $current }} main-nav__item--active{{ end }}">
+				{{ if not $current }}<a class="main-nav__link" href="{{ .URL }}">{{ end }}
+					{{ .Pre }}
+					<span class="main-nav__text">{{ .Name }}</span>
+					{{ .Post }}
+				{{ if not $current }}</a>{{ end }}
+			</li>
+			{{- end }}
 		{{- end }}
 	</ul>
 </nav>
