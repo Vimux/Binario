@@ -1,8 +1,11 @@
-{{ if isset $.Params "tags" }}
-{{ $tagsLen := len $.Params.tags }}
-{{ if gt $tagsLen 0 }}
+{{- $taxo := "tags" -}}
+{{- with .Param $taxo }}
 <div class="post__tags">
-	{{ range $k, $v := $.Params.tags }}<a class="post__tag btn" href="{{ "/tags/" | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a>{{ end }}
+	{{- range . }}
+		{{- $name := . -}}
+		{{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+			<a class="post__tag btn" href="{{ .RelPermalink }}">{{ .Title }}</a>
+		{{- end }}
+	{{- end }}
 </div>
-{{ end }}
-{{ end }}
+{{- end }}
