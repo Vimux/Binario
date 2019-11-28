@@ -45,6 +45,7 @@ body {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	background-color: #1b1b1b;
+	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 
