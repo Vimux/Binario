@@ -2,8 +2,9 @@
 {{- with .Param $taxo }}
 <div class="post__tags">
 	{{- range . }}
-		{{- $name := . -}}
-		{{- with $.Site.GetPage (printf "/%s/%s" $taxo ($name | urlize)) }}
+		{{- $url := urls.Parse (. | urlize) -}}
+		{{- $path := $url.Path -}}
+		{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
 			<a class="post__tag btn" href="{{ .RelPermalink }}">{{ .Title }}</a>
 		{{- end }}
 	{{- end }}
