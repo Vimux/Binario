@@ -1,17 +1,18 @@
 {{- $pag := $.Paginator }}
 {{- if gt $pag.TotalPages 1 }}
 <div class="pagination block">
-	{{- $.Scratch.Set "__paginator.ellipsed" false }}
+	{{- $ellipsed := false }}
+	{{- $shouldEllipse := false }}
 	{{- range $pag.Pagers }}
 		{{- $right := sub .TotalPages .PageNumber }}
 		{{- $showNumber := or (le .PageNumber 3) (eq $right 0) }}
 		{{- $showNumber := or $showNumber (and (gt .PageNumber (sub $pag.PageNumber 2)) (lt .PageNumber (add $pag.PageNumber 2))) }}
 		{{- if $showNumber }}
-			{{- $.Scratch.Set "__paginator.ellipsed" false }}
-			{{- $.Scratch.Set "__paginator.shouldEllipse" false }}
+			{{- $ellipsed = false }}
+			{{- $shouldEllipse = false }}
 		{{- else }}
-			{{- $.Scratch.Set "__paginator.shouldEllipse" (not ($.Scratch.Get "__paginator.ellipsed") ) }}
-			{{- $.Scratch.Set "__paginator.ellipsed" true }}
+			{{- $shouldEllipse = not $ellipsed }}
+			{{- $ellipsed = true }}
 		{{- end }}
 		{{- if $showNumber }}
 			{{- if eq . $pag }}
@@ -21,7 +22,7 @@
 			{{- else }}
 				<a class="pagination__item pagination__item--desktop" href="{{ .URL }}">{{ .PageNumber }}</a>
 			{{- end }}
-		{{- else if ($.Scratch.Get "__paginator.shouldEllipse") }}
+		{{- else if $shouldEllipse }}
 			<span class="pagination__item pagination__item--gap">&hellip;</span>
 		{{- end }}
 	{{- end }}
