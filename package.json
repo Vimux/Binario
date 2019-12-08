@@ -51,12 +51,12 @@
     "stylelint-order": "^3.0.0"
   },
   "scripts": {
-    "lint:prefixes": "postcss static/css/*.css",
-    "lint:css": "stylelint static/css/*.css",
+    "lint:prefixes": "postcss static/css/*.css assets/css/*.css",
+    "lint:css": "stylelint static/css/*.css assets/css/*.css",
     "lint:js": "eslint static/js/*.js",
     "lint": "npm run lint:css && npm run lint:js",
-    "fix:prefixes": "postcss -r static/css/*.css",
-    "fix:css": "stylelint static/css/*.css --fix",
+    "fix:prefixes": "postcss -r static/css/*.css assets/css/*.css",
+    "fix:css": "stylelint static/css/*.css assets/css/*.css --fix",
     "fix:js": "eslint static/js/*.js --fix",
     "fix": "npm run fix:prefixes && npm run fix:css && npm run fix:js",
     "test": "npm run lint"
