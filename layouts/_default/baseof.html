@@ -16,7 +16,8 @@
 	{{- end }}
 	{{- $cssReboot := resources.Get "css/reboot.css" }}
 	{{- $cssMain := resources.Get "css/main.css" }}
-	{{- $style := slice $cssReboot $cssMain | resources.Concat "css/bundle.css" }}
+	{{- $cssPrint := resources.Get "css/print.css" }}
+	{{- $style := slice $cssReboot $cssMain $cssPrint | resources.Concat "css/bundle.css" }}
 	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
 	{{- range .Site.Params.customCSS }}
 	<link rel="stylesheet" href="{{ . | relURL }}">
