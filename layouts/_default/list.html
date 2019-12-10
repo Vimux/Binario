@@ -1,5 +1,6 @@
 {{ define "main" }}
 	<main class="main">
+		{{ partial "breadcrumb.html" . }}
 		{{- if or .Title .Content }}
 		<div class="page block">
 			{{ with .Title }}<h1 class="page__title">{{ . }}</h1>{{ end }}

@@ -555,6 +555,48 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	stroke: #fff;
 }
 
+.breadcrumb {
+	padding: .875rem;
+	margin: .1875rem 0 -.1875rem;
+	color: #c3c3c3;
+	border-width: 1px 0 0;
+}
+
+.breadcrumb--separated {
+	margin: .1875rem 0 .3125rem;
+	border-width: 1px 0;
+}
+
+@media screen and (min-width: 480px) {
+	.breadcrumb {
+		margin: .625rem .3125rem -.625rem;
+		border-width: 1px 1px 0;
+	}
+
+	.breadcrumb--separated {
+		margin: .625rem .3125rem .3125rem;
+		border-width: 1px;
+	}
+}
+
+.breadcrumb__list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.breadcrumb__item {
+	display: flex;
+}
+
+.breadcrumb__item::after {
+	display: block;
+	margin: 0 .3125rem;
+	content: "›";
+}
+
 .alignleft {
 	float: left;
 	margin: 1rem 1rem 1rem 0;

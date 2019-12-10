@@ -33,6 +33,7 @@
     - [Related Content](#related-content)
     - [Share Buttons](#share-buttons)
     - [Featured Image](#featured-image)
+    - [Breadcrumb](#breadcrumb)
     - [Footer Social Icons](#footer-social-icons)
     - [Web App Manifest](#web-app-manifest)
 - [Contributing](#contributing)
@@ -156,6 +157,10 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.Featured]
   previewOnly = false # Show only preview featured image
+
+[Params.Breadcrumb]
+  enable = true # Enable breadcrumb block globally
+  homeText = "Binario" # Home node text
 
 [Params.Social]
   email = "example@example.com"
@@ -347,6 +352,26 @@ featured:
 ```
 
 **Note**: `caption` and `credit` appear only on single pages, not summaries.
+
+#### Breadcrumb
+
+Breadcrumb navigation is a hierarchical navigation menu presented as a trail of links. The main purpose of breadcrumb is
+to help users navigate in the site hierarchy.
+
+For enabling breadcrumb partial globally (for all single and list pages), use `enable` param under the
+`[Params.Breadcrumb]` section of your config.toml file:
+
+```toml
+[Params.Breadcrumb]
+  enable = true
+```
+
+The global `.Site.Params.Breadcrumb.enable` param can be overridden for specific posts with `breadcrumb` page's front
+matter param:
+
+```yaml
+breadcrumb: false
+```
 
 #### Footer Social Icons
 

@@ -1,0 +1,31 @@
+{{- $breadcrumb := default .Site.Params.breadcrumb.enable .Params.breadcrumb -}}
+
+{{- define "breadcrumbnav" }}
+	{{- if .p1.Parent -}}
+		{{- template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2) -}}
+	{{- else if not .p1.IsHome }}
+		{{- template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2) -}}
+	{{- end }}
+
+	{{- $crumbTitle := .p1.Title | default "..." -}}
+	{{- $crumbTitleHome := .p1.Site.Params.Breadcrumb.homeText | default .p1.Site.Title -}}
+	{{- if .p1.IsHome -}}
+		{{- $crumbTitle = $crumbTitleHome -}}
+	{{- end -}}
+
+	{{- if ne .p1 .p2 }}
+		<li class="breadcrumb__item">
+			<a class="breadcrumbs__link" href="{{ .p1.RelPermalink }}">{{ $crumbTitle }}</a>
+		</li>
+	{{- else }}
+		<li class="breadcrumbs__item breadcrumb__item--active" aria-current="page">{{ $crumbTitle }}</li>
+	{{- end }}
+{{- end }}
+
+{{- if $breadcrumb }}
+<nav class="breadcrumb{{ if not (or $.Title $.Content) }} breadcrumb--separated{{ end }} block" aria-label="breadcrumb">
+	<ol class="breadcrumb__list">
+		{{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+	</ol>
+</nav>
+{{- end }}

@@ -1,5 +1,6 @@
 {{ define "main" }}
 	<main class="main">
+		{{ partial "breadcrumb.html" . }}
 		<div class="single block">
 			<article class="post">
 				{{- partial "post_featured.html" (dict "page" . "IsSingle" true) }}
