@@ -272,6 +272,10 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 }
 
 @media (min-width: 920px) {
+	.header {
+		display: flex;
+	}
+
 	.logo {
 		display: inline-block;
 	}
@@ -312,7 +316,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 		border-color: #666;
 	}
 
-	.main-nav__list--right {
+	.main-nav--right {
 		margin-left: auto;
 	}
 
