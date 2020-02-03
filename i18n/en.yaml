@@ -1,27 +1,28 @@
 # Post
 - id: post_toc
-  translation: Table of Contents
+  translation: "Table of Contents"
 
 - id: meta_lastmod
-  translation: Updated
+  translation: "Updated"
 
 - id: meta_categories
-  translation: Categories
+  translation: "Categories"
 
 # Share
 - id: share-caption
-  translation: Share on
+  translation: "Share on"
 
 - id: save-caption
-  translation: Save to
+  translation: "Save to"
 
 # Related
 - id: related_title
-  translation: Related
+  translation: "Related"
 
 # Footer
 - id: footer_credits
-  translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
+  translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+  <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
 
 # "No posts" empty state
 - id: empty_title
