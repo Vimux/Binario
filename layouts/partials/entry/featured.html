@@ -12,7 +12,7 @@
 
 	{{- $featured := .GetMatch ($match | default "{featured.*,thumbnail.*}") -}}
 	{{ if and $featured (not (and $IsSingle ($.page.Param "featured.previewOnly"))) }}
-		<figure class="post__featured featured">
+		<figure class="entry__featured featured">
 			{{- with $link }}<a class="featured__link" href="{{ . }}">{{ end }}
 				<img class="featured__img" src="{{ $featured.RelPermalink }}" alt="
 					{{- with $featuredMap -}}

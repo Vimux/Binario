@@ -29,7 +29,7 @@
     - [Columns](#columns)
     - [Custom CSS](#custom-css)
     - [Custom JS](#custom-js)
-    - [Post Meta](#post-meta)
+    - [Entry Meta](#entry-meta)
     - [Related Content](#related-content)
     - [Share Buttons](#share-buttons)
     - [Featured Image](#featured-image)
@@ -121,7 +121,7 @@ file. Here is Binario configuration example in TOML with all available theme-spe
 baseurl = "/"
 title = "Binario"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
+paginate = "10" # Number of elements per page in pagination
 theme = "binario"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
@@ -138,22 +138,24 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   twitter_cards = true # Enable Twitter Cards if true
   columns = 2 # Set the number of cards columns. Possible values: 1, 2, 3
   mainSections = ["post"] # Set main page sections
-  post_meta = ["date", "categories"] # Enable post meta fields in given order
   dateFormat = "January 02, 2006" # Change the format of dates
   colorTheme = "" # dark-green, dark-blue, dark-red, dark-violet
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
   mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
   authorbox = true # Show authorbox at bottom of single pages if true
-  toc = true # Enable Table of Contents for all site pages
-  tocOpen = true # Open Table of Contents block. Optional
   comments = true # Enable comments for all site pages
   related = true # Enable Related content for single pages
-  relatedMax = 5 # Set the maximum number of posts that can be displayed in related block. Optional
+  relatedMax = 5 # Set the maximum number of elements that can be displayed in related block. Optional
   mathjax = true # Enable MathJax for all site pages
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
+
+[Params.Entry]
+  meta = ["date", "categories"] # Enable meta fields in given order
+  toc = true # Enable Table of Contents
+  tocOpen = true # Open Table of Contents block. Optional
 
 [Params.Featured]
   previewOnly = false # Show only preview featured image
@@ -177,7 +179,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mastodon = "https://some.instance/@username"
   medium = "username"
 
-[Params.Share] # Post Share block
+[Params.Share] # Entry Share block
   facebook = true
   twitter = true
   reddit = true
@@ -235,11 +237,15 @@ tags:
 menu: main # Add page to a menu. Options: main, footer
 
 # Theme-Defined params
-comments: true # Enable/disable Disqus comments for specific post
-authorbox: true # Enable/disable Authorbox for specific post
-toc: true # Enable/disable Table of Contents for specific post
-mathjax: true # Enable/disable MathJax for specific post
-related: true # Enable/disable Related content for specific post
+comments: true # Enable/disable Disqus comments for specific page
+authorbox: true # Enable/disable Authorbox for specific page
+toc: true # Enable/disable Table of Contents for specific page
+tocOpen: true # Open Table of Contents block for specific page
+mathjax: true # Enable/disable MathJax for specific page
+related: true # Enable/disable Related content for specific page
+meta:
+  - date
+  - categories
 featured:
   url: image.jpg # relative path of the image
   alt: A scale model of the Eiffel tower # alternate text for the image
@@ -302,14 +308,14 @@ relative to the `static` folder of your Hugo site:
 
 All custom JS files will be added before closing body tag of a `baseof.html` file.
 
-#### Post Meta
+#### Entry Meta
 
-Post metadata are relevant information about your post such as published date, last modified date, category, etc. You
-may activate post meta fields with `post_meta` parameter in config:
+Entry metadata are relevant information about your entry such as published date, last modified date, category, etc. You
+may activate meta fields with `meta` parameter under the `[Params.Entry]` config section:
 
 ```toml
-[Params]
-  post_meta = ["date", "categories"]
+[Params.Entry]
+  meta = ["date", "categories"]
 ```
 
 #### Related Content
@@ -366,8 +372,8 @@ For enabling breadcrumb partial globally (for all single and list pages), use `e
   enable = true
 ```
 
-The global `.Site.Params.Breadcrumb.enable` param can be overridden for specific posts with `breadcrumb` page's front
-matter param:
+The global `.Site.Params.Breadcrumb.enable` param can be overridden for specific pages with `breadcrumb` front matter
+param:
 
 ```yaml
 breadcrumb: false

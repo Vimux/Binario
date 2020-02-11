@@ -1,6 +1,0 @@
-{{ if .Param "toc" }}
-<details class="post__toc toc" {{ if .Params.tocOpen }}open{{ end }}>
-	<summary class="toc__title">{{- T "post_toc" -}}</summary>
-	{{ .TableOfContents }}
-</details>
-{{ end }}

@@ -1,5 +1,5 @@
 {{- if and .IsPage (.Param "share") }}
-<div class="post__share share">
+<div class="entry__share share">
 	{{- if .Param "share.facebook" }}
 	<a class="share__link btn" title="{{ T "share-caption" }} Facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Facebook', 'width=800,height=600,toolbar=0,status=0'); return false">
 		{{ partial "svg/facebook.svg" (dict "class" "share__icon" ) }}

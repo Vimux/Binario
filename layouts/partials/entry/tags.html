@@ -1,11 +1,11 @@
 {{- $taxo := "tags" -}}
 {{- with .Param $taxo }}
-<div class="post__tags">
+<div class="entry__tags">
 	{{- range . }}
 		{{- $url := urls.Parse (. | urlize) -}}
 		{{- $path := $url.Path -}}
 		{{- with $.Site.GetPage (printf "/%s/%s" $taxo $path) }}
-			<a class="post__tag btn" href="{{ .RelPermalink }}">{{ .Title }}</a>
+			<a class="entry__tag btn" href="{{ .RelPermalink }}">{{ .Title }}</a>
 		{{- end }}
 	{{- end }}
 </div>

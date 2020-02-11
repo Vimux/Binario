@@ -1,9 +1,0 @@
-{{ $currentPage := .page }}
-{{- if .page.Param "post_meta" }}
-	<div class="post__meta meta {{ .class }}">
-		{{- range $metaField := .page.Param "post_meta" -}}
-			{{- $metaFieldPath := printf "post_meta/%s.html" $metaField -}}
-			{{- partial $metaFieldPath $currentPage -}}
-		{{ end }}
-	</div>
-{{ end }}

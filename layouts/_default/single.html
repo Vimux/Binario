@@ -2,16 +2,16 @@
 	<main class="main">
 		{{ partial "breadcrumb.html" . }}
 		<div class="single block">
-			<article class="post">
-				{{- partial "post_featured.html" (dict "page" . "IsSingle" true) }}
-				{{- partial "post_meta.html" (dict "page" . "class" "mb") }}
-				<h1 class="post__title">{{ .Title }}</h1>
-				{{- partial "post_toc.html" . }}
-				<div class="post__content">{{ .Content }}</div>
+			<article class="entry">
+				{{- partial "entry/featured.html" (dict "page" . "IsSingle" true) }}
+				{{- partial "entry/meta.html" (dict "page" . "class" "mb") }}
+				<h1 class="entry__title">{{ .Title }}</h1>
+				{{- partial "entry/toc.html" . }}
+				<div class="entry__content">{{ .Content }}</div>
 				{{ if or (.Param "share") (isset $.Params "tags") }}
-				<footer class="post__footer">
-					{{ partial "post_tags.html" . }}
-					{{ partial "post_share.html" . }}
+				<footer class="entry__footer">
+					{{ partial "entry/tags.html" . }}
+					{{ partial "entry/share.html" . }}
 				</footer>
 				{{ end }}
 			</article>

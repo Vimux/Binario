@@ -1,25 +1,25 @@
 /* Print */
 @media print {
-	.post__content a,
-	.post__meta a,
-	.post__tag {
+	.entry__content a,
+	.entry__meta a,
+	.entry__tag {
 		color: #000;
 		text-decoration: underline;
 	}
 
 	.logo,
 	.block,
-	.post__title,
-	.post__title-link,
+	.entry__title,
+	.entry__title-link,
 	.meta-categories__link,
-	.post__meta,
-	.post__content {
+	.entry__meta,
+	.entry__content {
 		color: #000;
 	}
 
 	.main-nav,
 	.comments,
-	.post__toc,
+	.entry__toc,
 	.related,
 	.footer__copyright-credits {
 		display: none;

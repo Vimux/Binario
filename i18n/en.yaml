@@ -1,7 +1,8 @@
-# Post
-- id: post_toc
+# Entry
+- id: entry_toc
   translation: "Table of Contents"
 
+# Entry meta
 - id: meta_lastmod
   translation: "Updated"
 
