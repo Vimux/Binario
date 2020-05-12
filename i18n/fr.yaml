@@ -1,0 +1,49 @@
+# Entry
+- id: entry_toc
+  translation: "Table des matières"
+
+# Entry meta
+- id: meta_lastmod
+  translation: "Mis à jour le"
+
+- id: meta_categories
+  translation: "Catégories"
+
+# Share
+- id: share-caption
+  translation: "Partager sur"
+
+- id: save-caption
+  translation: "Sauvegarder Sous"
+
+# Related
+- id: related_title
+  translation: "Voir aussi"
+
+# Footer
+- id: footer_credits
+  translation: "Propulsé par <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> et le theme \
+  <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a>."
+
+# "No posts" empty state
+- id: empty_title
+  translation: "Aucune publication pour le moment"
+
+- id: empty_text_start
+  translation: "Lorsque vous ajouterez des publication dans vos dossiers <code>mainSection</code>"
+
+- id: empty_text_end
+  translation: "elles arriveront ici"
+
+- id: empty_tip
+  translation: "<b>Astuce:</b> Vous pouvez changer les dossiers <code>mainSection</code> dans le fichier de configuration du site."
+
+# 404
+- id: page404_title
+  translation: "404 Page introuvable"
+
+- id: page404_lead
+  translation: "Désolé, la page que vous cherchez n'existe pas"
+
+- id: page404_link
+  translation: "Retourner à l'acceuil"
