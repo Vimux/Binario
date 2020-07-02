@@ -11,7 +11,7 @@
 * Responsive
 * Card-based list layout
 * Color themes
-* Internal Hugo templates for Open Graph and Twitter Cards meta data, Google Analytics, and Disqus comments
+* Internal Hugo templates (Open Graph, Schema, Twitter Cards, Google Analytics, Disqus comments)
 * Table of contents
 * Related content
 * MathJax
@@ -135,6 +135,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   description = "Responsive card-based & code-light Hugo theme" # Site Description. Used in meta description
   copyright = "Binario" # Copyright holder, otherwise will use .Site.Title
   opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
   twitter_cards = true # Enable Twitter Cards if true
   columns = 2 # Set the number of cards columns. Possible values: 1, 2, 3
   mainSections = ["post"] # Set main page sections
