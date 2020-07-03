@@ -42,13 +42,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^9.7.5",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "postcss-cli": "^7.1.0",
-    "stylelint": "^13.3.0",
-    "stylelint-order": "^4.0.0"
+    "autoprefixer": "^9.8.4",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "postcss-cli": "^7.1.1",
+    "stylelint": "^13.6.1",
+    "stylelint-order": "^4.1.0"
   },
   "scripts": {
     "lint:prefixes": "postcss static/css/*.css assets/css/*.css",
