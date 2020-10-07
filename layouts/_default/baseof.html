@@ -40,7 +40,7 @@
 		{{ template "_internal/google_analytics_async.html" . }}
 	{{- end }}
 </head>
-<body>
+<body class="body kind-{{ .Kind }}">
 	{{ partial "header" . }}
 	<div class="primary">
 	{{ block "main" . }}
