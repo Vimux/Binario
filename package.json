@@ -43,6 +43,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^10.1.0",
+    "editorconfig-checker": "^3.3.0",
     "eslint": "^7.17.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
@@ -55,7 +56,8 @@
     "lint:prefixes": "postcss static/css/*.css assets/css/*.css",
     "lint:css": "stylelint static/css/*.css assets/css/*.css",
     "lint:js": "eslint static/js/*.js",
-    "lint": "npm run lint:css && npm run lint:js",
+    "lint:editorconfig": "editorconfig-checker",
+    "lint": "npm run lint:css && npm run lint:js && npm run lint:editorconfig",
     "fix:prefixes": "postcss -r static/css/*.css assets/css/*.css",
     "fix:css": "stylelint static/css/*.css assets/css/*.css --fix",
     "fix:js": "eslint static/js/*.js --fix",
