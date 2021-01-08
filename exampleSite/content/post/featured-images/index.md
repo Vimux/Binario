@@ -15,7 +15,8 @@ in this theme can have a featured image.
 Content pages in Hugo can have their images or any other files stored under the same directory of the page itself.
 In Hugo's terms, it's called **page bundle** and allows us to keep all assets together with a page content file.
 
-This theme uses page bundles for featured images. There are two main different ways to add a featured image.
+This theme uses [page bundles](https://gohugo.io/content-management/organization/#page-bundles) for featured images.
+There are two main different ways to add a featured image.
 
 ### Option 1. Put `featured.*` or `thumbnail.*` image in the page bundle
 
