@@ -488,6 +488,16 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	list-style: none;
 }
 
+.toc ul a {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.toc ul ul a {
+	padding-left: 12px;
+}
+
 .toc ul ul ul a {
 	padding-left: 25px;
 }
