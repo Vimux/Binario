@@ -15,6 +15,11 @@
 		{{ partial "svg/reddit.svg" (dict "class" "share__icon" ) }}
 	</a>
 	{{- end }}
+	{{- if .Param "share.xing" }}
+	<a class="share__link btn" title="{{ T "share-caption" }} Xing" href="https://www.xing.com/social/share/spi?url={{ .Permalink }}&button_style=square-no_counter" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Xing', 'width=832,height=624,toolbar=0,status=0'); return false">
+	{{ partial "svg/xing.svg" (dict "class" "share__icon" ) }}
+	</a>
+	{{- end }}
 	{{- if .Param "share.telegram" }}
 	<a class="share__link btn" title="{{ T "share-caption" }} Telegram" href="https://t.me/share/url?url={{ .Permalink }}&amp;title={{ .Title }}" target="_blank" rel="noopener noreferrer" onclick="window.open(this.href, '{{ T "share-caption" }} Telegram', 'width=800,height=600,toolbar=0,status=0'); return false">
 		{{ partial "svg/telegram.svg" (dict "class" "share__icon" ) }}

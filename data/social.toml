@@ -41,6 +41,12 @@
   weight = 70
 
 [[icons]]
+  id = "xing"
+  url = "https://www.xing.com/profile/%s/cv"
+  icon = "svg/xing.svg"
+  weight = 75
+
+[[icons]]
   id = "linkedin"
   url = "https://linkedin.com/in/%s"
   icon = "svg/linkedin.svg"
