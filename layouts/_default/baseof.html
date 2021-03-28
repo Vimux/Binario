@@ -20,11 +20,17 @@
 	{{- $cssReboot := resources.Get "css/reboot.css" }}
 	{{- $cssMain := resources.Get "css/main.css" }}
 	{{- $cssPrint := resources.Get "css/print.css" }}
-	{{- $style := slice $cssReboot $cssMain $cssPrint | resources.Concat "css/bundle.css" }}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+	{{- $style := slice $cssReboot $cssMain $cssPrint }}
 	{{- range .Site.Params.customCSS }}
-	<link rel="stylesheet" href="{{ . | relURL }}">
+	{{ $customCSS := resources.Get . }}
+	{{- if $customCSS }}
+	{{- $style = $style | append $customCSS }}
+	{{- else }}
+	<link rel="stylesheet" href="{{ .}}">
 	{{- end }}
+	{{- end }}
+	{{- $styleCSS := $style | resources.Concat "css/bundle.css" | minify }}
+	<link rel="stylesheet" href="{{ $styleCSS.RelPermalink }}">
 	{{- with .Site.Params.colorTheme }}
 	<link rel="stylesheet" href="{{ (printf "css/themes/%s.css" .) | relURL }}">
 	{{- end }}
