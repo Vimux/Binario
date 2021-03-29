@@ -3,10 +3,10 @@ body {
 	margin: 0 auto;
 	text-align: left;
 	word-wrap: break-word;
+	padding: 0 15px;
 	overflow-wrap: break-word;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
