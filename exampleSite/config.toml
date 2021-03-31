@@ -3,7 +3,14 @@ title = "Binario"
 languageCode = "en-us"
 paginate = 10
 theme = "binario"
+themesDir = "../.."
 
 [Params]
   description = "Responsive card-based & code-light Hugo theme"
   columns = 2
+[Params.algoliaSearch]
+  enable = false
+  appId = ''
+  apiKey = ''
+  siteId = ''
+  branch = ''
