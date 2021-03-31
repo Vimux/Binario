@@ -21,12 +21,15 @@
 	{{- $cssMain := resources.Get "css/main.css" }}
 	{{- $cssPrint := resources.Get "css/print.css" }}
 	{{- $style := slice $cssReboot $cssMain $cssPrint }}
+	{{- if .Site.Params.algoliaSearch.enable }}
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css">
+	{{- end }}
 	{{- range .Site.Params.customCSS }}
 	{{ $customCSS := resources.Get . }}
 	{{- if $customCSS }}
 	{{- $style = $style | append $customCSS }}
 	{{- else }}
-	<link rel="stylesheet" href="{{ .}}">
+	<link rel="stylesheet" href="{{ . }}">
 	{{- end }}
 	{{- end }}
 	{{- $styleCSS := $style | resources.Concat "css/bundle.css" | minify }}
@@ -65,6 +68,18 @@
 {{- partial "mathjax.html" . -}}
 {{- range .Site.Params.customJS }}
 <script src="{{ . | relURL }}"></script>
+{{- end }}
+{{- if .Site.Params.algoliaSearch.enable }}
+<script src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+<script>
+	algoliasearchNetlify({
+		appId: "{{ .Site.Params.algoliaSearch.appId }}",
+		apiKey: "{{ .Site.Params.algoliaSearch.apiKey }}",
+		siteId: "{{ .Site.Params.algoliaSearch.siteId }}",
+		branch: "{{ .Site.Params.algoliaSearch.branch }}",
+		selector: 'div#search',
+	});
+</script>
 {{- end }}
 </body>
 </html>

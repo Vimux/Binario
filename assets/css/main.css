@@ -9,6 +9,65 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+:root {
+	--aa-base-unit: 16;
+	--aa-font-size: calc(var(--aa-base-unit) * 1px);
+	--aa-spacing-factor: 1;
+	--aa-spacing: calc(var(--aa-base-unit) * var(--aa-spacing-factor) * 1px);
+	--aa-spacing-half: calc(var(--aa-spacing) / 2);
+	--aa-icon-size: 18px;
+	--aa-icon-stroke-width: calc(20 / var(--aa-base-unit) * 1.6);
+	--aa-primary-color: rgb(248, 174, 0);
+	--aa-muted-color: rgb(51, 51, 51);
+	--aa-selected-color: rgba(248, 174, 0, 0.32);
+	--aa-icon-color: #7777a3;
+	--aa-text-color: #262627;
+	--aa-content-text-color: rgba(38, 38, 39, 0.7);
+	--aa-background-color: rgb(51, 51, 51);
+	--aa-background-color-alpha-0: hsla(0, 0%, 100%, 0);
+	--aa-panel-shadow: 0 0 0 1px rgba(35, 38, 59, 0.1), 0 6px 16px -4px rgba(35, 38, 59, 0.15);
+	--aa-panel-max-height: 500px;
+	--aa-detached-modal-max-width: 500px;
+	--aa-detached-modal-max-height: 500px;
+	--color-background: rgb(51, 51, 51);
+}
+
+.aa-Autocomplete {
+	--color-background: rgb(51, 51, 51);
+	--color-selected: rgb(51, 51, 51);
+	--color-text: rgb(221, 221, 221);
+	--color-input-icon: rgb(248, 174, 0);
+}
+
+.aa-Panel {
+	--color-background: rgb(51, 51, 51);
+	--color-selected: #2a2a2a;
+	--color-input-icon: rgb(248, 174, 0);
+	--color-source-icon: rgba(248, 174, 0, 0.32);
+	position: fixed;
+	margin: 12px 0 0;
+}
+
+.aa-Item {
+	--color-mark: rgb(248, 174, 0);
+}
+
+.aa-ItemTitle {
+	color: rgb(221, 221, 221);
+	--color-text: rgb(221, 221, 221);
+}
+
+.aa-SourceFooter {
+	display: none;
+}
+
+.aa-DetachedContainer {
+	--color-background: rgb(51, 51, 51);
+	--color-selected: rgb(51, 51, 51);
+	--color-text: rgb(221, 221, 221);
+	--color-input-icon: rgb(248, 174, 0);
+}
+
 @media screen and (min-width: 480px) {
 	ol,
 	ul,
