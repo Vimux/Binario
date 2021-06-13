@@ -238,7 +238,8 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 }
 
 .main-nav__item--active {
-	padding: .625rem .875rem;
+	padding: .625rem .875rem .625rem .625rem;
+	border-left: 4px solid #888;
 }
 
 .main-nav__item--active:hover {
