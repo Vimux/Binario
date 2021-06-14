@@ -85,6 +85,13 @@ comments and it may take some time to complete.
 * Keep PR up to date with upstream/master
 * Pay attention to any automated CI failures reported in the Pull Request
 * PR solves a common use case that several users will need in their real-life projects, not only your specific problems
+* Before you start something new or refactor something old, make sure you've read through the codebase and understand
+each part's purpose so that you don't break something.
+* Always try to avoid breaking changes. But if they are needed, then mark each breaking commit with a
+"BREAKING CHANGE:" prefix in the commit title and a detailed explanation in the commit description of what happened and
+what the user needs to do.
+* A deprecated param will be maintained for a 6 month transition period, after which it will be removed at any time.
+* If something mandates an unclear solution, leave a comment behind for the contributors that come after you.
 * If you've added or modify SVG, ensure that each SVG file:
   * Be less than 2048 bytes
   * Be minified to a single line with no formatting
