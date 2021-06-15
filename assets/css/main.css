@@ -248,7 +248,13 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 
 .main-nav__link {
 	display: block;
-	padding: .625rem .875rem;
+	padding: .625rem .875rem .625rem .625rem;
+	border-left: 4px solid transparent;
+}
+
+.main-nav__link:hover {
+	text-decoration: none;
+	border-color: #666;
 }
 
 .main-nav__list {
@@ -310,11 +316,7 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	.main-nav__link {
 		padding: .625rem .625rem .5rem;
 		border-bottom: 2px solid transparent;
-	}
-
-	.main-nav__link:hover {
-		text-decoration: none;
-		border-color: #666;
+		border-left: 0;
 	}
 
 	.main-nav--right {
