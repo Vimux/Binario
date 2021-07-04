@@ -485,26 +485,17 @@ button:not(:-moz-focusring):focus > .main-nav__btn-box {
 	padding: .5rem 0 .5rem .5rem;
 }
 
-.toc ul {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-
-.toc ul ul ul a {
+.toc nav ul {
 	padding-left: 25px;
 }
 
-.toc ul ul ul ul a {
-	padding-left: 45px;
+.toc nav ul li {
+	list-style: none;
 }
 
-.toc ul ul ul ul ul a {
-	padding-left: 65px;
-}
-
-.toc ul ul ul ul ul ul a {
-	padding-left: 85px;
+.toc nav > ul {
+	padding: 0;
+	margin: 0;
 }
 
 .entry__footer {
