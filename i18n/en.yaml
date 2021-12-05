@@ -30,13 +30,13 @@
   translation: "You don't have any posts yet!"
 
 - id: empty_text_start
-  translation: "As posts are added in your <code>mainSection</code> folders"
+  translation: "As posts are added in your <code>mainSections</code> folders"
 
 - id: empty_text_end
   translation: "they'll appear here"
 
 - id: empty_tip
-  translation: "<b>Tip:</b> You could change <code>mainSection</code> folders in site config file."
+  translation: "<b>Tip:</b> You could change <code>mainSections</code> folders in site config file."
 
 # 404
 - id: page404_title

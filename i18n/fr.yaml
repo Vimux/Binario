@@ -30,13 +30,13 @@
   translation: "Aucune publication pour le moment"
 
 - id: empty_text_start
-  translation: "Lorsque vous ajouterez des publication dans vos dossiers <code>mainSection</code>"
+  translation: "Lorsque vous ajouterez des publication dans vos dossiers <code>mainSections</code>"
 
 - id: empty_text_end
   translation: "elles arriveront ici"
 
 - id: empty_tip
-  translation: "<b>Astuce:</b> Vous pouvez changer les dossiers <code>mainSection</code> dans le fichier de configuration du site."
+  translation: "<b>Astuce:</b> Vous pouvez changer les dossiers <code>mainSections</code> dans le fichier de configuration du site."
 
 # 404
 - id: page404_title
