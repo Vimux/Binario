@@ -30,13 +30,13 @@
   translation: "Non hai ancora nessun post!"
 
 - id: empty_text_start
-  translation: "Man mano che i post vengono aggiunti nelle tue cartelle <code>mainSection</code>"
+  translation: "Man mano che i post vengono aggiunti nelle tue cartelle <code>mainSections</code>"
 
 - id: empty_text_end
   translation: "appariranno qui"
 
 - id: empty_tip
-  translation: "<b>Suggerimento:</b> puoi cambiare le cartelle <code>mainSection</code> dal file di configurazione del sito."
+  translation: "<b>Suggerimento:</b> puoi cambiare le cartelle <code>mainSections</code> dal file di configurazione del sito."
 
 # 404
 - id: page404_title

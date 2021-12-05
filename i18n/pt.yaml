@@ -30,13 +30,13 @@
   translation: "Você ainda não tem postagens!"
 
 - id: empty_text_start
-  translation: "Conforme as postagens são adicionadas no diretório <code>mainSection</code>"
+  translation: "Conforme as postagens são adicionadas no diretório <code>mainSections</code>"
 
 - id: empty_text_end
   translation: "Eles vão aparecendo aqui"
 
 - id: empty_tip
-  translation: "<b>Dica:</b> Você pode alterar o diretório <code>mainSection</code> no site config file."
+  translation: "<b>Dica:</b> Você pode alterar o diretório <code>mainSections</code> no site config file."
 
 # 404
 - id: page404_title
