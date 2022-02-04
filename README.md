@@ -4,7 +4,7 @@
 
 **[Demo](https://binario.netlify.com/)**
 
-![Binario theme screenshot](https://github.com/vimux/binario/blob/master/images/tn.png)
+![Binario theme screenshot](https://raw.githubusercontent.com/vimux/binario/master/images/tn.png)
 
 **Features:**
 
