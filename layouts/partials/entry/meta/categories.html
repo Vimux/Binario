@@ -1,5 +1,5 @@
 {{- if .Params.categories }}
-<span class="entry__meta-categories meta-categories">
+<div class="entry__meta-categories meta-categories">
 	<span class="meta-categories__list">{{ T "meta_categories" }}:
 	{{- range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}
 		<a class="meta-categories__link" href="{{ "categories/" | relLangURL }}{{ . | urlize | lower }}/" rel="category">
@@ -7,5 +7,5 @@
 		</a>
 	{{- end }}
 	</span>
-</span>
+</div>
 {{- end }}
