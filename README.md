@@ -64,7 +64,7 @@ git clone https://github.com/vimux/binario themes/binario
 
 Next, edit your `config.toml` configuration file and add parameter:
 
-```
+```toml
 theme = "binario"
 ```
 
@@ -78,7 +78,7 @@ git submodule add https://github.com/vimux/binario themes/binario
 
 Next, edit your `config.toml` configuration file and add parameter:
 
-```
+```toml
 theme = "binario"
 ```
 
@@ -92,7 +92,7 @@ Hugo website.
 
 Next, edit your `config.toml` configuration file and add parameter:
 
-```
+```toml
 theme = "binario"
 ```
 
