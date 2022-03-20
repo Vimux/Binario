@@ -1,0 +1,11 @@
+{{- if .Params.tags }}
+<div class="entry__meta-tags meta-tags">
+	<span class="meta-tags__list">{{ T "meta_tags" }}:
+		{{- range $index, $category := .Params.tags }}{{ if gt $index 0 }}, {{ end }}
+		<a class="meta-tags__link" href="{{ " tags/" | relLangURL }}{{ . | urlize | lower }}/" rel="tag">
+			{{- . -}}
+		</a>
+		{{- end }}
+	</span>
+</div>
+{{- end }}

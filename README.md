@@ -154,7 +154,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
 [Params.Entry]
-  meta = ["date", "categories"] # Enable meta fields in given order
+  meta = ["date", "categories", "tags"] # Enable meta fields in given order
   toc = true # Enable Table of Contents
   tocOpen = true # Open Table of Contents block. Optional
 
@@ -247,6 +247,7 @@ related: true # Enable/disable Related content for specific page
 meta:
   - date
   - categories
+  - tags
 featured:
   url: image.jpg # relative path of the image
   alt: A scale model of the Eiffel tower # alternate text for the image
@@ -316,7 +317,7 @@ may activate meta fields with `meta` parameter under the `[Params.Entry]` config
 
 ```toml
 [Params.Entry]
-  meta = ["date", "categories"]
+  meta = ["date", "categories", "tags"]
 ```
 
 #### Related Content

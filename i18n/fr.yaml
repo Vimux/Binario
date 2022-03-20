@@ -9,6 +9,9 @@
 - id: meta_categories
   translation: "Catégories"
 
+- id: meta_tags
+  translation: "Mots-clefs"
+
 # Share
 - id: share-caption
   translation: "Partager sur"
