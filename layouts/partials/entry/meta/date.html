@@ -3,7 +3,7 @@
 		{{- .Date.Format (.Site.Params.dateFormat | default "January 02, 2006") -}}
 	</time>
 {{- end }}
-{{- if ne .Date .Lastmod }}
+{{- if and (not .Lastmod.IsZero) (ne .Date .Lastmod) }}
 	<time class="entry__meta-lastmod meta-lastmod" datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
 		{{- T "meta_lastmod" }}: {{ .Lastmod.Format (.Site.Params.dateFormat | default "January 02, 2006") -}}
 	</time>
