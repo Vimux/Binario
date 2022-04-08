@@ -179,6 +179,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   stackoverflow = "numberid"
   mastodon = "https://some.instance/@username"
   medium = "username"
+  spotify = "username"
 
 [Params.Share] # Entry Share block
   facebook = true
