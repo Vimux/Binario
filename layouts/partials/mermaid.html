@@ -1,0 +1,3 @@
+{{ if and .IsPage (eq (.Param "mermaid") true) }}
+<script src={{ .Param "mermaidPath" | default "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" }} async></script>
+{{ end }}

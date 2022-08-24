@@ -15,6 +15,7 @@
 * Table of contents
 * Related content
 * MathJax
+* Mermaid
 
 ## Table of Contents
 
@@ -151,6 +152,8 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   mathjax = true # Enable MathJax for all site pages
   mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
   mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+  mermaid = true # Enable MathJax for all site pages
+  mermaidPath = "https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js" # Specify mermaid path. Optional
   hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
 
 [Params.Entry]
@@ -243,6 +246,7 @@ authorbox: true # Enable/disable Authorbox for specific page
 toc: true # Enable/disable Table of Contents for specific page
 tocOpen: true # Open Table of Contents block for specific page
 mathjax: true # Enable/disable MathJax for specific page
+mermaid: true # Enable/disable mermaid for specific page
 related: true # Enable/disable Related content for specific page
 meta:
   - date
