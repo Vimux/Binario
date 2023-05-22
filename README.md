@@ -310,6 +310,17 @@ relative to the `static` folder of your Hugo site:
 
 All custom JS files will be added before closing body tag of a `baseof.html` file.
 
+#### Enable User Canonical
+
+You can specify an explicit canonical link which helps to set a single source 
+of truth for your page. See [here](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls#rel-canonical-link-method)
+how this helps Google to crawl your page.
+
+```toml
+[Params]
+  enableUserCanonical = true
+```
+
 #### Entry Meta
 
 Entry metadata are relevant information about your entry such as published date, last modified date, category, etc. You
