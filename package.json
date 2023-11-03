@@ -42,15 +42,15 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "editorconfig-checker": "^4.0.2",
-    "eslint": "^8.27.0",
+    "autoprefixer": "^10.4.16",
+    "editorconfig-checker": "^5.1.1",
+    "eslint": "^8.52.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-import": "^2.29.0",
     "postcss": "^8.4.31",
-    "postcss-cli": "^10.0.0",
-    "stylelint": "^15.10.1",
-    "stylelint-order": "^5.0.0"
+    "postcss-cli": "^10.1.0",
+    "stylelint": "^15.11.0",
+    "stylelint-order": "^6.0.3"
   },
   "scripts": {
     "lint:prefixes": "postcss static/css/*.css assets/css/*.css",
