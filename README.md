@@ -184,6 +184,7 @@ googleAnalytics = "" # DEPRECATED! Use .Services.googleAnalytics.ID
   stackoverflow = "numberid"
   mastodon = "https://some.instance/@username"
   medium = "username"
+  spotify = "username"
 
 [Params.Share] # Entry Share block
   facebook = true
