@@ -1,0 +1,52 @@
+# Entry
+- id: entry_toc
+  translation: "Sisältö"
+
+# Entry meta
+- id: meta_lastmod
+  translation: "Päivitetty"
+
+- id: meta_categories
+  translation: "Aiheet"
+
+- id: meta_tags
+  translation: "Tunnisteet"
+
+# Share
+- id: share-caption
+  translation: "Jaa"
+
+- id: save-caption
+  translation: "Talleta"
+
+# Related
+- id: related_title
+  translation: "Liittyvät"
+
+# Footer
+- id: footer_credits
+  translation: "Sivut on luotu <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a>:lla käyttäen \
+  <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> teemaa."
+
+# "No posts" empty state
+- id: empty_title
+  translation: "Et ole vielä tehnyt julkaisuja!"
+
+- id: empty_text_start
+  translation: "Lisättyäsi postauksia <code>mainSections</code> kansioihin"
+
+- id: empty_text_end
+  translation: "näkyvät ne täällä"
+
+- id: empty_tip
+  translation: "<b>Tip:</b> Voit muuttaa <code>mainSections</code> kansiot sivuston konfiguroinnissa."
+
+# 404
+- id: page404_title
+  translation: "404 Sivua ei löydy"
+
+- id: page404_lead
+  translation: "Valitettavasti etsimäsi sivu ei ole olemassa."
+
+- id: page404_link
+  translation: "Siirry takaisin pääsivulle"
