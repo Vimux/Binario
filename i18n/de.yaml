@@ -1,0 +1,52 @@
+# Entry
+- id: entry_toc
+  translation: "Inhaltsverzeichnis"
+
+# Entry meta
+- id: meta_lastmod
+  translation: "Aktualisiert"
+
+- id: meta_categories
+  translation: "Kategorien"
+
+- id: meta_tags
+  translation: "Tags"
+
+# Share
+- id: share-caption
+  translation: "Share on"
+
+- id: save-caption
+  translation: "Speichere nach"
+
+# Related
+- id: related_title
+  translation: "Ähnlich"
+
+# Footer
+- id: footer_credits
+  translation: "Powered by <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> und \
+  <a href=\"https://github.com/vimux/binario\" rel=\"nofollow noopener\" target=\"_blank\">Binario</a> theme."
+
+# "No posts" empty state
+- id: empty_title
+  translation: "Aktuell noch keine Posts vorhanden!"
+
+- id: empty_text_start
+  translation: "Sowie Posts in Deinen als <code>mainSections</code> definierten Verzeichnissen hinzugefügt werden"
+
+- id: empty_text_end
+  translation: "erscheinen sie hier."
+
+- id: empty_tip
+  translation: "<b>Tip:</b> Du kannst die als <code>mainSections</code> betrachteten  Verzeichnisse in der Konfigurationsdatei Deiner Seite ändern."
+
+# 404
+- id: page404_title
+  translation: "404 Seite nicht gefunden"
+
+- id: page404_lead
+  translation: "Entschuldigung, die Seite die Du besuchen wolltest existiert nicht."
+
+- id: page404_link
+  translation: "Zurück zur Hauptseite"
