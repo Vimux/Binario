@@ -35,7 +35,13 @@
 	{{- with ((.Site.GetPage "home").OutputFormats.Get "manifest") }}
 	<link rel="manifest" href="{{ "manifest.json" | relURL }}">
 	{{- end }}
-	{{- if not .Site.IsServer }}
+	{{- $server := "" }}
+	{{- if ge (int (index (split hugo.Version ".") 1)) "120" }}
+		{{- $server = hugo.IsServer }}
+	{{- else }}
+		{{- $server = .Site.IsServer }}
+	{{- end }}
+	{{- if not $server -}}
 		{{ template "_internal/google_analytics.html" . }}
 	{{- end }}
 </head>
