@@ -2,7 +2,7 @@
 
 **Binario** is a responsive card-based & code-light Hugo theme.
 
-**[Demo](https://binario.netlify.com/)**
+**[Demo](https://binario.netlify.app/)**
 
 ![Binario theme screenshot](https://raw.githubusercontent.com/vimux/binario/master/images/tn.png)
 
