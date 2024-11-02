@@ -75,3 +75,9 @@
   url = "https://medium.com/@%s"
   icon = "svg/medium.svg"
   weight = 130
+
+[[icons]]
+  id = "spotify"
+  url = "https://open.spotify.com/user/%s"
+  icon = "svg/spotify.svg"
+  weight = 140
